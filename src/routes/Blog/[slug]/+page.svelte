@@ -1,23 +1,23 @@
 <script lang="ts">
-	import { formatDate } from '$lib/utils';
+  import { formatDate } from '$lib/utils';
 
-	export let data;
+  export let data;
 </script>
 
 <!-- SEO -->
 <svelte:head>
-	<title>{data.meta.title}</title>
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
+  <title>{data.meta.title}</title>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
 <article>
-	<hgroup>
-		<h1>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
-	</hgroup>
+  <hgroup>
+    <h1>{data.meta.title}</h1>
+    <p>Published at {formatDate(data.meta.date)}</p>
+  </hgroup>
 
-	<div class="content">
-		<svelte:component this={data.content} />
-	</div>
+  <div class="content">
+    <svelte:component this={data.content} />
+  </div>
 </article>
