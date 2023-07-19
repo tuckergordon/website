@@ -10,8 +10,12 @@
   "svelteStrictMode": false,
   "tabWidth": 2,
   "useTabs": false,
-  "plugins": ["prettier-plugin-svelte", "@trivago/prettier-plugin-sort-imports"],
-  "pluginSearchDirs": ["."],
+  "plugins": [
+    "prettier-plugin-svelte",
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "pluginSearchDirs": false,
   "overrides": [
     {
       "files": "*.svelte",
