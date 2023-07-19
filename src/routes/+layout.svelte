@@ -5,14 +5,17 @@
   import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
 
   import '../styles/app.postcss';
-  import BlogSideToc from './blog/sideToc.svelte';
-  import BlogSidenav from './blog/sidenav.svelte';
-  import Header from './header.svelte';
+  import Header from './Header.svelte';
+  import Transition from './Transition.svelte';
+  import BlogSideToc from './blog/SideToc.svelte';
+  import BlogSidenav from './blog/Sidenav.svelte';
+
+  export let data;
 
   $: showSidenavs = $page.url.pathname.includes('/blog/');
 </script>
 
-<AppShell>
+<AppShell slotSidebarLeft="w-0 md:w-64" slotSidebarRight="w-0 lg:w-64">
   <svelte:fragment slot="header">
     <Header />
   </svelte:fragment>
@@ -27,5 +30,7 @@
     {/if}
   </svelte:fragment>
 
-  <slot />
+  <Transition url={data.url}>
+    <slot />
+  </Transition>
 </AppShell>

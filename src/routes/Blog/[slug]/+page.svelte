@@ -11,10 +11,10 @@
   <meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article class="prose dark:prose-invert">
+<article class="prose dark:prose-invert p-4">
   <hgroup>
     <h1>{data.meta.title}</h1>
-    <p>Published at {formatDate(data.meta.date)}</p>
+    <p class="italic">{formatDate(data.meta.date)}</p>
   </hgroup>
 
   <div class="content">
