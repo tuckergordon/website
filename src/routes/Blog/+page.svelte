@@ -1,6 +1,7 @@
 <script lang="ts">
   import * as config from '$lib/config';
-  import { formatDate } from '$lib/utils';
+
+  import PostCard from './PostCard.svelte';
 
   export let data;
 </script>
@@ -9,14 +10,11 @@
   <title>{config.title}</title>
 </svelte:head>
 
-<section>
-  <ul class="posts">
+<div class="container mx-auto my-4">
+  <h1 class="h1 my-8">Blog</h1>
+  <section class="grid grid-cols-2 md:grid-cols-3 gap-4">
     {#each data.posts as post}
-      <li class="post">
-        <a href="blog/{post.slug}" class="title">{post.title}</a>
-        <p class="date">{formatDate(post.date)}</p>
-        <p class="description">{post.description}</p>
-      </li>
+      <PostCard {post} />
     {/each}
-  </ul>
-</section>
+  </section>
+</div>

@@ -1,5 +1,5 @@
 ---
-title: Developer Setup
+title: My Developer Setup
 description: A running list of all of the tools and tricks I use as a web developer
 date: '2023-07-18'
 published: true
@@ -30,7 +30,7 @@ Here's how I make the Mac terminal look/work the way I want
 
 ## Environment Management
 
-### `conda`
+### conda
 
 I use Anaconda (via [miniconda](https://docs.conda.io/en/latest/miniconda.html)) to handle most of
 my global installation needs, including Python and Node.
@@ -60,7 +60,7 @@ conda install -c conda-forge nodejs=16.20.1
 I set my default `python.defaultInterpreterPath` to that conda environment's python shell so that
 whenever i open a new terminal in vscode, it automatically activates the environment
 
-### `pnpm`
+### pnpm
 
 I started using [pnpm](https://pnpm.io/) instead of the normal `npm` and have been loving it so far.
 Dramatically reduced install times makes for a much nicer developer experience.

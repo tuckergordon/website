@@ -1,7 +1,7 @@
 ---
 title: Creating a standalone web application
 description: How to deploy a web application as an HTML file.
-date: '2023-07-18'
+date: '2023-07-19'
 published: true
 ---
 
