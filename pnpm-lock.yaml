@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource-variable/outfit': ^5.0.5
   '@playwright/test': ^1.28.1
   '@skeletonlabs/skeleton': ^1.10.0
   '@sveltejs/adapter-auto': ^2.0.0
@@ -32,6 +33,7 @@ specifiers:
   vitest: ^0.32.2
 
 devDependencies:
+  '@fontsource-variable/outfit': 5.0.5
   '@playwright/test': 1.36.1
   '@skeletonlabs/skeleton': 1.10.0_svelte@4.0.5
   '@sveltejs/adapter-auto': 2.1.0_@sveltejs+kit@1.22.3
@@ -429,6 +431,10 @@ packages:
   /@eslint/js/8.44.0:
     resolution: {integrity: sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
+  /@fontsource-variable/outfit/5.0.5:
+    resolution: {integrity: sha512-kksftW3oHodECRMU7a2TiaqhiX7dU+v7jKEd9CAb0ZZRNeyAichik+LfDxWdXq+U22g6nqkNSQD8JLNFCuMkxA==}
     dev: true
 
   /@humanwhocodes/config-array/0.11.10:

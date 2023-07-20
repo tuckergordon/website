@@ -11,7 +11,7 @@
   <meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article class="prose dark:prose-invert p-4">
+<article class="prose dark:prose-invert p-4 pt-12">
   <hgroup>
     <h1>{data.meta.title}</h1>
     <p class="italic">{formatDate(data.meta.date)}</p>

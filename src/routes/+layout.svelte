@@ -1,11 +1,12 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { AppShell } from '@skeletonlabs/skeleton';
+  import '@fontsource-variable/outfit';
+  import '../styles/theme.postcss';
   import '@skeletonlabs/skeleton/styles/skeleton.css';
-  import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
-
   import '../styles/app.postcss';
-  import Header from './Header.svelte';
+
+  import Navbar from './Navbar.svelte';
   import Transition from './Transition.svelte';
   import BlogSideToc from './blog/SideToc.svelte';
   import BlogSidenav from './blog/Sidenav.svelte';
@@ -17,7 +18,7 @@
 
 <AppShell slotSidebarLeft="w-0 md:w-64" slotSidebarRight="w-0 lg:w-64">
   <svelte:fragment slot="header">
-    <Header />
+    <Navbar />
   </svelte:fragment>
   <svelte:fragment slot="sidebarLeft">
     {#if showSidenavs}
