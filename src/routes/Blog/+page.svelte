@@ -11,6 +11,7 @@
 </svelte:head>
 
 <div class="container mx-auto my-4">
+  <h1 class="h1 my-8">Blog</h1>
   <section class="grid grid-cols-2 md:grid-cols-3 gap-4">
     {#each data.posts as post}
       <PostCard {post} />
