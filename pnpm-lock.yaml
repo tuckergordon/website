@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fontsource-variable/outfit': ^5.0.5
+  '@iconify/svelte': ^3.1.4
   '@playwright/test': ^1.28.1
   '@skeletonlabs/skeleton': ^1.10.0
   '@sveltejs/adapter-auto': ^2.0.0
@@ -34,6 +35,7 @@ specifiers:
 
 devDependencies:
   '@fontsource-variable/outfit': 5.0.5
+  '@iconify/svelte': 3.1.4_svelte@4.0.5
   '@playwright/test': 1.36.1
   '@skeletonlabs/skeleton': 1.10.0_svelte@4.0.5
   '@sveltejs/adapter-auto': 2.1.0_@sveltejs+kit@1.22.3
@@ -455,6 +457,19 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify/svelte/3.1.4_svelte@4.0.5:
+    resolution: {integrity: sha512-YDwQlN46ka8KPRayDb7TivmkAPizfTXi6BSRNqa1IV0+byA907n8JcgQafA7FD//pW5XCuuAhVx6uRbKTo+CfA==}
+    peerDependencies:
+      svelte: '*'
+    dependencies:
+      '@iconify/types': 2.0.0
+      svelte: 4.0.5
+    dev: true
+
+  /@iconify/types/2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
   /@jest/schemas/29.6.0:

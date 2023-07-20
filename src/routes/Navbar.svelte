@@ -1,5 +1,6 @@
 <script lang="ts">
   import * as config from '$lib/config';
+  import Icon from '@iconify/svelte';
   import { AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
@@ -12,7 +13,31 @@
     <a href="/blog">Blog</a>
   </svelte:fragment>
   <svelte:fragment slot="trail">
-    <a href="/rss.xml" target="_blank">RSS</a>
+    <!-- TODO: update href to the GitHub for this repo-->
+    <a
+      class="btn-icon hover:variant-soft-primary !ml-0 hover:text-on-primary-token"
+      href="https://github.com/tuckergordon"
+      target="_blank"
+      rel="noreferrer">
+      <Icon icon="fa-brands:github" />
+    </a>
+    <a
+      class="btn-icon hover:variant-soft-primary !ml-0 hover:text-on-primary-token"
+      href="https://www.linkedin.com/in/tucker-gordon-ab5b8b67/"
+      target="_blank"
+      rel="noreferrer">
+      <Icon icon="fa-brands:linkedin" />
+    </a>
+    <a
+      class="btn-icon hover:variant-soft-primary !ml-0 hover:text-on-primary-token"
+      href="https://twitter.com/TuckerAGordon"
+      target="_blank"
+      rel="noreferrer">
+      <Icon icon="fa-brands:twitter" />
+    </a>
+    <a class="btn-icon hover:variant-soft-primary !ml-0 hover:text-on-primary-token" href="/rss.xml" target="_blank" rel="noreferrer">
+      <Icon icon="fa-solid:rss" />
+    </a>
     <LightSwitch rounded="rounded-full" />
   </svelte:fragment>
 </AppBar>
