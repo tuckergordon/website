@@ -12,7 +12,8 @@
     "check:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "npm run test:integration && npm run test:unit",
     "test:integration": "playwright test",
-    "test:unit": "vitest"
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest"
   },
   "devDependencies": {
     "@fontsource-variable/outfit": "^5.0.5",
