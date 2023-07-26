@@ -2,7 +2,7 @@
 name: Task
 about: Discrete task to be accomplished
 title: ''
-labels: ''
+labels: task
 assignees: ''
 
 ---
