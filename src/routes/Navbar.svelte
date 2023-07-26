@@ -13,10 +13,9 @@
     <a href="/blog">Blog</a>
   </svelte:fragment>
   <svelte:fragment slot="trail">
-    <!-- TODO: update href to the GitHub for this repo-->
     <a
       class="btn-icon hover:variant-soft-primary !ml-0 hover:text-on-primary-token"
-      href="https://github.com/tuckergordon"
+      href="https://github.com/tuckergordon/website"
       target="_blank"
       rel="noreferrer">
       <Icon icon="fa-brands:github" />
