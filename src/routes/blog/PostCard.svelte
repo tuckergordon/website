@@ -5,7 +5,9 @@
   export let post: Post;
 </script>
 
-<a href="blog/{post.slug}" class="p-4 h-auto min-h-[300px] max-w-full card rounded-lg prose dark:prose-invert">
+<a
+  href="blog/{post.slug}"
+  class="prose card h-auto min-h-[300px] max-w-full rounded-lg p-4 dark:prose-invert">
   <h2>{post.title}</h2>
   <p>{formatDate(post.date)}</p>
   <p>{post.description}</p>
