@@ -7,7 +7,7 @@
     <section class="prose mx-auto text-center dark:prose-invert">
       <h3>I'd love to hear from you!</h3>
     </section>
-    <section class="flex flex-wrap items-center justify-center space-x-4 gap-y-4">
+    <section class="flex flex-wrap items-center justify-center gap-y-4 space-x-4">
       <a
         class="btn variant-soft"
         href="mailto:tucker.gordon18@gmail.com?subject=Hello from your website!"
