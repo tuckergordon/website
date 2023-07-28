@@ -6,6 +6,7 @@
 
   import '../styles/app.postcss';
   import '../styles/theme.postcss';
+  import Footer from './Footer.svelte';
   import Navbar from './Navbar.svelte';
   import Transition from './Transition.svelte';
   import BlogSideToc from './blog/SideToc.svelte';
@@ -35,4 +36,8 @@
   <Transition url={data.url}>
     <slot />
   </Transition>
+
+  <svelte:fragment slot="pageFooter">
+    <Footer />
+  </svelte:fragment>
 </AppShell>

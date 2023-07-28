@@ -20,27 +20,6 @@
       rel="noreferrer">
       <Icon icon="fa-brands:github" />
     </a>
-    <a
-      class="btn-icon !ml-0 hover:variant-soft-primary hover:text-on-primary-token"
-      href="https://www.linkedin.com/in/tucker-gordon-ab5b8b67/"
-      target="_blank"
-      rel="noreferrer">
-      <Icon icon="fa-brands:linkedin" />
-    </a>
-    <a
-      class="btn-icon !ml-0 hover:variant-soft-primary hover:text-on-primary-token"
-      href="https://twitter.com/TuckerAGordon"
-      target="_blank"
-      rel="noreferrer">
-      <Icon icon="fa-brands:twitter" />
-    </a>
-    <a
-      class="btn-icon !ml-0 hover:variant-soft-primary hover:text-on-primary-token"
-      href="/rss.xml"
-      target="_blank"
-      rel="noreferrer">
-      <Icon icon="fa-solid:rss" />
-    </a>
     <LightSwitch rounded="rounded-full" />
   </svelte:fragment>
 </AppBar>
