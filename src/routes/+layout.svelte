@@ -1,7 +1,9 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
   import '@fontsource-variable/outfit';
   import { AppShell } from '@skeletonlabs/skeleton';
+  import { storePopup } from '@skeletonlabs/skeleton';
   import '@skeletonlabs/skeleton/styles/skeleton.css';
 
   import '../styles/app.postcss';
@@ -16,6 +18,9 @@
 
   $: showSidenavs = $page.url.pathname.includes('/blog/');
   $: sidebarClasses = showSidenavs ? 'w-0 lg:w-64' : 'hidden';
+
+  // Setup Skeleton pop-up for use throughout the app
+  storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 </script>
 
 <AppShell slotSidebarLeft={sidebarClasses} slotSidebarRight={sidebarClasses}>

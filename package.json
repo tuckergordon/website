@@ -16,6 +16,7 @@
     "test:unit:watch": "vitest"
   },
   "devDependencies": {
+    "@floating-ui/dom": "^1.5.0",
     "@fontsource-variable/outfit": "^5.0.5",
     "@iconify/svelte": "^3.1.4",
     "@playwright/test": "^1.28.1",
