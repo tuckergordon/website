@@ -4,10 +4,10 @@
   import { AppBar, LightSwitch, popup, type PopupSettings } from '@skeletonlabs/skeleton';
 
   const popupCombobox: PopupSettings = {
-    event: 'focus-click',
+    event: 'click',
     target: 'popupCombobox',
     placement: 'bottom',
-    closeQuery: '.listbox-item',
+    closeQuery: '.list-nav a',
   };
 
   const links = [
