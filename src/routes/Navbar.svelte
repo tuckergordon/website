@@ -46,7 +46,8 @@
     </div>
 
     <a href="/" class="flex items-center sm:mr-8">
-      <img src="/mustachioed-favicon.png" alt="Tucker Emoji" class="mr-4 h-8" />
+      <!-- svelte-preprocess-import-assets-ignore -->
+      <img src="/images/mustachioed-favicon.png" alt="Tucker Emoji" class="mr-4 h-8" />
       <b>{config.title}</b>
     </a>
   </svelte:fragment>
