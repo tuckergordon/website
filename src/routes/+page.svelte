@@ -32,19 +32,19 @@
     <ScrollerOverlay backdrop="hero" justifyContent="start">
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           👋 Hi there!
         </div>
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           My name is <b>Tucker</b> and I'm a <b>web developer 🧑‍💻 in Portland, ME.</b>
         </div>
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           Keep scrolling ⬇️ to read my story, or head over to the <a
             href="/blog"
             class="btn btn-sm variant-filled-primary no-underline dark:bg-secondary-500"
-            >blog &nbsp;<Icon icon="fa-solid:chevron-right" /></a> for some of my thoughts and musings.
+            >Blog &nbsp;<Icon icon="fa-solid:chevron-right" /></a> for some of my thoughts and musings.
         </div>
         <ScrollDownArrows class="text-white" />
       </div>
@@ -55,7 +55,7 @@
       on:stepEnter={() => taborVideo?.play()}>
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           I grew up in the other Portland (OR) but moved across the country to attend
           <a href="https://www.bowdoin.edu/" class="bold text-on-primary-token">
             Bowdoin College
@@ -68,7 +68,7 @@
     <ScrollerOverlay backdrop="dc" justifyContent="start">
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           <p>
             I joined <a href="https://www.boozallen.com/" class="text-on-primary-token">
               Booz Allen</a>
@@ -77,7 +77,7 @@
           </p>
         </div>
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           Data viz introduced me to web development, and what began with creating small
           <b>scrollytelling</b> pages for clients, turned into building
           <b>enterprise applications</b> and immersion in the world of JavaScript.
@@ -90,7 +90,7 @@
       on:stepEnter={() => maineCoastVideo.play()}>
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           In 2020, I began working remotely and moved back to Maine <img
             src="$lib/assets/images/maine.jpeg"
             alt="Maine state flag"
@@ -102,7 +102,7 @@
     <ScrollerOverlay backdrop="surfing" justifyContent="start">
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           Outside of work, my hobbies include surfing 🏄‍♂️, snowboarding 🏂, disc golfing 🥏, softball
           🥎, and an endless search for the perfect pancake 🥞.
         </div>
@@ -111,7 +111,7 @@
     <ScrollerOverlay backdrop="pancakes" justifyContent="start">
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-primary-500 dark:text-on-primary-token">
+          class="prose card variant-filled-secondary my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           <h4 class="text-on-primary-token">Current pancake leaders</h4>
 
           <ul>
