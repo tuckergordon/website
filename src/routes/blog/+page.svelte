@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>{config.title}</title>
+  <title>{config.title} | Blog</title>
 </svelte:head>
 
 <div class="container px-4 sm:mx-auto sm:my-4">

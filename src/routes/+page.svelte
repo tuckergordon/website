@@ -2,6 +2,7 @@
   import ScrollDownArrows from '$lib/components/Scroller/ScrollDownArrows.svelte';
   import Scroller from '$lib/components/Scroller/Scroller.svelte';
   import ScrollerOverlay from '$lib/components/Scroller/ScrollerOverlay.svelte';
+  import * as config from '$lib/config';
   import Icon from '@iconify/svelte';
 
   let taborVideo: HTMLVideoElement;
@@ -9,7 +10,7 @@
 </script>
 
 <svelte:head>
-  <title>About Me</title>
+  <title>{config.title} | About</title>
 </svelte:head>
 
 <Scroller>
