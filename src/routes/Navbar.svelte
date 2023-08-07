@@ -12,6 +12,10 @@
 
   const links = [
     {
+      name: 'About',
+      href: '/',
+    },
+    {
       name: 'Blog',
       href: '/blog',
     },
@@ -55,7 +59,7 @@
     {#each links as link}
       <a
         href={link.href}
-        class="btn hidden hover:variant-soft-surface hover:text-on-primary-token sm:block">
+        class="btn !mx-0 hidden hover:variant-soft-surface hover:text-on-primary-token sm:block">
         {link.name}
       </a>
     {/each}
