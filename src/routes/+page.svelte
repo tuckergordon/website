@@ -18,12 +18,12 @@
     <img id="hero" src="$lib/assets/images/hero.jpeg" alt="Tucker looking at Mt. Katahdin" />
     <video bind:this={taborVideo} id="tabor" muted autoplay loop playsinline>
       <source src="$lib/assets/videos/tabor.mp4" type="video/mp4" />
-      <img src="$lib/assets/images/tabor.png" alt="View from Mt. Tabor Park in Portland, OR" />
+      <img src="$lib/assets/images/tabor.jpeg" alt="View from Mt. Tabor Park in Portland, OR" />
     </video>
     <img id="dc" src="$lib/assets/images/dc.jpeg" alt="Washington Monument and cherry blossoms" />
     <video bind:this={maineCoastVideo} id="maine-coast" muted autoplay loop playsinline>
       <source src="$lib/assets/videos/maine-coast.mp4" type="video/mp4" />
-      <img src="$lib/assets/images/maine-coast.png" alt="A rocky Maine coastline" />
+      <img src="$lib/assets/images/maine-coast.jpeg" alt="A rocky Maine coastline" />
     </video>
     <img id="surfing" src="$lib/assets/images/surfing.jpeg" alt="Tucker surfing on a wave" />
     <img id="pancakes" src="$lib/assets/images/pancakes.jpeg" alt="Pancakes on a griddle" />
