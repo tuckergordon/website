@@ -12,6 +12,10 @@
 
   const links = [
     {
+      name: 'About',
+      href: '/',
+    },
+    {
       name: 'Blog',
       href: '/blog',
     },
@@ -46,7 +50,8 @@
     </div>
 
     <a href="/" class="flex items-center sm:mr-8">
-      <img src="/mustachioed-favicon.png" alt="Tucker Emoji" class="mr-4 h-8" />
+      <!-- svelte-preprocess-import-assets-ignore -->
+      <img src="/images/mustachioed-favicon.png" alt="Tucker Emoji" class="mr-4 h-8" />
       <b>{config.title}</b>
     </a>
   </svelte:fragment>
@@ -54,7 +59,7 @@
     {#each links as link}
       <a
         href={link.href}
-        class="btn hidden hover:variant-soft-surface hover:text-on-primary-token sm:block">
+        class="btn !mx-0 hidden hover:variant-soft-surface hover:text-on-primary-token sm:block">
         {link.name}
       </a>
     {/each}
