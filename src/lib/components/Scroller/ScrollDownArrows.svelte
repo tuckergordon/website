@@ -1,7 +1,10 @@
-<script>
-  let _class = '';
-  export { _class as class };
-  export let style = '';
+<script lang="ts">
+  interface Props {
+    class?: string;
+    style?: string;
+  }
+
+  let { class: _class = '', style = '' }: Props = $props();
 </script>
 
 <div class={'scroll-down-arrows ' + _class} {style}>

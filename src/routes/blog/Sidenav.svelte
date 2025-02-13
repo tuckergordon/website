@@ -1,10 +1,11 @@
 <script lang="ts">
   import { page } from '$app/stores';
 
-  $: classesActive = (href: string) =>
+  let classesActive = $derived((href: string) =>
     href === $page.url.pathname
       ? 'bg-primary-500 text-on-primary-token hover:text-primary-500 dark:bg-surface-800 dark:text-secondary-500'
-      : '';
+      : ''
+  );
 </script>
 
 <nav class="list-nav p-4">

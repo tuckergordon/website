@@ -1,7 +1,11 @@
 <!-- Used to override the default <img> in mdsvex -->
 <script lang="ts">
-  export let src: string;
-  export let alt: string;
+  interface Props {
+    src: string;
+    alt: string;
+  }
+
+  let { src, alt }: Props = $props();
 </script>
 
 <img {src} {alt} loading="lazy" />

@@ -2,7 +2,11 @@
   import type { Post } from '$lib/models/Post.model';
   import { formatDate } from '$lib/utils';
 
-  export let post: Post;
+  interface Props {
+    post: Post;
+  }
+
+  let { post }: Props = $props();
 </script>
 
 <a

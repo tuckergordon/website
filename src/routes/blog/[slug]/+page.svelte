@@ -1,7 +1,7 @@
 <script lang="ts">
   import { formatDate } from '$lib/utils';
 
-  export let data;
+  let { data } = $props();
 </script>
 
 <!-- SEO -->
@@ -18,6 +18,6 @@
   </hgroup>
 
   <div class="content">
-    <svelte:component this={data.content} />
+    <data.content />
   </div>
 </article>

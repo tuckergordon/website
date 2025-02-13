@@ -14,35 +14,43 @@
   import BlogSideToc from './blog/SideToc.svelte';
   import BlogSidenav from './blog/Sidenav.svelte';
 
-  export let data;
+  let { data, children } = $props();
 
-  $: showSidenavs = $page.url.pathname.includes('/blog/');
-  $: sidebarClasses = showSidenavs ? 'w-0 lg:w-64' : 'hidden';
+  let showSidenavs = $derived($page.url.pathname.includes('/blog/'));
+  let sidebarClasses = $derived(showSidenavs ? 'w-0 lg:w-64' : 'hidden');
 
   // Setup Skeleton pop-up for use throughout the app
   storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 </script>
 
 <AppShell slotSidebarLeft={sidebarClasses} slotSidebarRight={sidebarClasses}>
-  <svelte:fragment slot="header">
-    <Navbar />
-  </svelte:fragment>
-  <svelte:fragment slot="sidebarLeft">
-    {#if showSidenavs}
-      <BlogSidenav />
-    {/if}
-  </svelte:fragment>
-  <svelte:fragment slot="sidebarRight">
-    {#if showSidenavs}
-      <BlogSideToc />
-    {/if}
-  </svelte:fragment>
+  {#snippet header()}
+  
+      <Navbar />
+    
+  {/snippet}
+  {#snippet sidebarLeft()}
+  
+      {#if showSidenavs}
+        <BlogSidenav />
+      {/if}
+    
+  {/snippet}
+  {#snippet sidebarRight()}
+  
+      {#if showSidenavs}
+        <BlogSideToc />
+      {/if}
+    
+  {/snippet}
 
   <Transition url={data.url}>
-    <slot />
+    {@render children?.()}
   </Transition>
 
-  <svelte:fragment slot="pageFooter">
-    <Footer />
-  </svelte:fragment>
+  {#snippet pageFooter()}
+  
+      <Footer />
+    
+  {/snippet}
 </AppShell>
