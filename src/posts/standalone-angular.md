@@ -42,7 +42,7 @@ Shoutout to Next, who make this process easy via their [`export`](TODO:) configu
 
 1. Create a new Nextjs application
 
-```shell
+```bash
 npx create-next-app@latest
 ```
 
@@ -77,7 +77,7 @@ is [not supported](TODO:) when running applications via the `file://` protocol.
 
 1. Create a new Angular application
 
-```shell
+```bash
 npm init @angular angular myApp
 ```
 

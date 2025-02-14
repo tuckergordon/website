@@ -43,13 +43,13 @@ installation. Ever try to switch to a different version of node? It's a pain. Su
 
 - Install globally:
 
-```shell
+```bash
 conda install -c conda-forge nodejs
 ```
 
 - Or create an environment and install a specific version:
 
-```shell
+```bash
 conda create --name node16
 conda activate node16
 conda install -c conda-forge nodejs=16.20.1

@@ -4,10 +4,8 @@
   import '@fontsource-variable/outfit';
   import { AppShell } from '@skeletonlabs/skeleton';
   import { storePopup } from '@skeletonlabs/skeleton';
-  import '@skeletonlabs/skeleton/styles/skeleton.css';
 
   import '../styles/app.postcss';
-  import '../styles/theme.postcss';
   import Footer from './Footer.svelte';
   import Navbar from './Navbar.svelte';
   import Transition from './Transition.svelte';
@@ -25,23 +23,17 @@
 
 <AppShell slotSidebarLeft={sidebarClasses} slotSidebarRight={sidebarClasses}>
   {#snippet header()}
-  
-      <Navbar />
-    
+    <Navbar />
   {/snippet}
   {#snippet sidebarLeft()}
-  
-      {#if showSidenavs}
-        <BlogSidenav />
-      {/if}
-    
+    {#if showSidenavs}
+      <BlogSidenav />
+    {/if}
   {/snippet}
   {#snippet sidebarRight()}
-  
-      {#if showSidenavs}
-        <BlogSideToc />
-      {/if}
-    
+    {#if showSidenavs}
+      <BlogSideToc />
+    {/if}
   {/snippet}
 
   <Transition url={data.url}>
@@ -49,8 +41,6 @@
   </Transition>
 
   {#snippet pageFooter()}
-  
-      <Footer />
-    
+    <Footer />
   {/snippet}
 </AppShell>

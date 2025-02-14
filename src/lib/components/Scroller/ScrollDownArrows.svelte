@@ -8,9 +8,9 @@
 </script>
 
 <div class={'scroll-down-arrows ' + _class} {style}>
-  <span class="arrow" />
-  <span class="arrow" />
-  <span class="arrow" />
+  <span class="arrow"></span>
+  <span class="arrow"></span>
+  <span class="arrow"></span>
 </div>
 
 <style lang="scss">
