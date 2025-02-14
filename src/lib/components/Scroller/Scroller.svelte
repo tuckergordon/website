@@ -1,5 +1,3 @@
-<!-- @migration-task Error while migrating Svelte code: This migration would change the name of a slot making the component unusable -->
-<!-- @migration-task Error while migrating Svelte code: This migration would change the name of a slot making the component unusable -->
 <script lang="ts">
   import scrollama from 'scrollama';
   import { onMount } from 'svelte';
@@ -7,21 +5,22 @@
   let backdrop: Element;
   let overlayContainer: HTMLDivElement;
 
-  const backdrops = new Map<string, Element>();
-  let overlays: Element[] = [];
+  let { backdrops, overlays } = $props();
+  const _backdrops = new Map<string, Element>();
+  let _overlays: Element[] = [];
 
   const scroller = scrollama();
 
   onMount(() => {
     [...backdrop.children].forEach((element: Element) => {
-      backdrops.set(element.id, element);
+      _backdrops.set(element.id, element);
     });
-    overlays = [...overlayContainer.children] as Element[];
-    setBackdrop([...backdrops.values()][0]);
+    _overlays = [...overlayContainer.children] as Element[];
+    setBackdrop([..._backdrops.values()][0]);
 
     scroller
       .setup({
-        step: overlays as HTMLElement[],
+        step: _overlays as HTMLElement[],
         progress: true, // TODO: only if it's using it
       })
       .onStepEnter(onStepEnter)
@@ -31,7 +30,7 @@
 
   function onStepEnter(stepCallback: scrollama.CallbackResponse) {
     const { element } = stepCallback;
-    const activeBackdrop = backdrops.get(element.getAttribute('data-scroller-backdrop') as string);
+    const activeBackdrop = _backdrops.get(element.getAttribute('data-scroller-backdrop') as string);
     if (activeBackdrop) {
       setBackdrop(activeBackdrop);
     }
@@ -56,10 +55,10 @@
 
 <div class="scroller">
   <div class="scroller-backdrop" bind:this={backdrop}>
-    <slot name="backdrops" />
+    {@render backdrops()}
   </div>
   <div class="scroller-overlays" bind:this={overlayContainer}>
-    <slot name="overlays" />
+    {@render overlays()}
   </div>
 </div>
 
