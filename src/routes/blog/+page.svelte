@@ -1,6 +1,5 @@
 <script lang="ts">
   import * as config from '$lib/config';
-
   import PostCard from './PostCard.svelte';
 
   let { data } = $props();

@@ -128,7 +128,7 @@ fs.writeFileSync(
   '<!DOCTYPE html>' + dom.window.document.documentElement.outerHTML,
   function (error) {
     if (error) throw error;
-  }
+  },
 );
 ```
 

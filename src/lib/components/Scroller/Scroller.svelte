@@ -34,17 +34,17 @@
     if (activeBackdrop) {
       setBackdrop(activeBackdrop);
     }
-    element.dispatchEvent(new CustomEvent('stepEnter', { detail: stepCallback }));
+    element.dispatchEvent(new CustomEvent('stepenter', { detail: stepCallback }));
   }
 
   function onStepExit(stepCallback: scrollama.CallbackResponse) {
     const { element } = stepCallback;
-    element.dispatchEvent(new CustomEvent('stepExit', { detail: stepCallback }));
+    element.dispatchEvent(new CustomEvent('stepexit', { detail: stepCallback }));
   }
 
   function onStepProgress(progressCallback: scrollama.ProgressCallbackResponse) {
     const { element } = progressCallback;
-    element.dispatchEvent(new CustomEvent('stepProgress', { detail: progressCallback }));
+    element.dispatchEvent(new CustomEvent('stepprogress', { detail: progressCallback }));
   }
 
   function setBackdrop(element: Element) {

@@ -1,16 +1,15 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
-  import '@fontsource-variable/outfit';
-  import { AppShell } from '@skeletonlabs/skeleton';
-  import { storePopup } from '@skeletonlabs/skeleton';
-
   import '../styles/app.postcss';
   import Footer from './Footer.svelte';
   import Navbar from './Navbar.svelte';
   import Transition from './Transition.svelte';
   import BlogSideToc from './blog/SideToc.svelte';
   import BlogSidenav from './blog/Sidenav.svelte';
+  import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
+  import '@fontsource-variable/outfit';
+  import { AppShell } from '@skeletonlabs/skeleton';
+  import { storePopup } from '@skeletonlabs/skeleton';
 
   let { data, children } = $props();
 
