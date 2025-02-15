@@ -1,8 +1,8 @@
 declare namespace svelteHTML {
   // enhance attributes
   interface HTMLAttributes {
-    'on:stepEnter'?: (event: CustomEvent) => void;
-    'on:stepExit'?: (event: CustomEvent) => void;
-    'on:stepProgress'?: (event: CustomEvent) => void;
+    onstepenter?: (event: CustomEvent<CallbackResponse>) => void;
+    onstepexit?: (event: CustomEvent<CallbackResponse>) => void;
+    onstepprogress?: (event: CustomEvent<ProgressCallbackResponse>) => void;
   }
 }

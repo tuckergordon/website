@@ -1,21 +1,15 @@
 {
-  "bracketSameLine": true,
-  "importOrder": ["src/", "^[./]"],
-  "importOrderSeparation": true,
-  "importOrderParserPlugins": ["typescript", "decorators-legacy"],
+  "useTabs": false,
+  "tabWidth": 2,
+  "singleQuote": true,
   "printWidth": 100,
   "proseWrap": "always",
-  "singleQuote": true,
-  "svelteIndentScriptAndStyle": true,
-  "svelteStrictMode": false,
-  "tabWidth": 2,
-  "useTabs": false,
+  "bracketSameLine": true,
   "plugins": [
     "prettier-plugin-svelte",
     "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-tailwindcss"
   ],
-  "pluginSearchDirs": false,
   "overrides": [
     {
       "files": "*.svelte",

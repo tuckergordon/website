@@ -24,7 +24,7 @@
 </script>
 
 <AppBar background="bg-primary-500 dark:bg-surface-800 text-on-primary-token">
-  <svelte:fragment slot="lead">
+  {#snippet lead()}
     <button
       class="btn-icon hover:variant-soft-primary hover:text-on-primary-token sm:!hidden"
       use:popup={popupCombobox}>
@@ -46,7 +46,7 @@
           {/each}
         </ul>
       </nav>
-      <div class="arrow bg-inherit" />
+      <div class="arrow bg-inherit"></div>
     </div>
 
     <a href="/" class="flex items-center sm:mr-8">
@@ -54,8 +54,8 @@
       <img src="/images/mustachioed-favicon.png" alt="Tucker Emoji" class="mr-4 h-8" />
       <b>{config.title}</b>
     </a>
-  </svelte:fragment>
-  <svelte:fragment slot="trail">
+  {/snippet}
+  {#snippet trail()}
     {#each links as link}
       <a
         href={link.href}
@@ -71,5 +71,5 @@
       <Icon icon="fa-brands:github" />
     </a>
     <LightSwitch rounded="rounded-full" />
-  </svelte:fragment>
+  {/snippet}
 </AppBar>

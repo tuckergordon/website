@@ -1,28 +1,31 @@
 import adapter from '@sveltejs/adapter-vercel';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import rehypeSlug from 'rehype-slug';
+import rehypeUnwrapImages from 'rehype-unwrap-images';
 import remarkToc from 'remark-toc';
-import remarkUnwrapImages from 'remark-unwrap-images';
-import shiki from 'shiki';
+import { createHighlighter } from 'shiki';
 import { importAssets } from 'svelte-preprocess-import-assets';
+
+const theme = 'one-dark-pro';
+const highlighter = await createHighlighter({
+  themes: [theme],
+  // prettier-ignore
+  langs: [ 'css', 'js', 'json', 'jsx', 'html', 'shell', 'svelte', 'sass', 'scss', 'text', 'ts', 'tsx', 'zsh'],
+});
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
   extensions: ['.md'],
   highlight: {
     highlighter: async (code, lang = 'text') => {
-      const highlighter = await shiki.getHighlighter({ theme: 'one-dark-pro' });
-      const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+      await highlighter.loadLanguage('javascript');
+      const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
       return `{@html \`${html}\` }`;
     },
   },
-  // TODO:
-  // layout: {
-  // 	_: './src/mdsvex.svelte'
-  // },
-  remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
-  rehypePlugins: [rehypeSlug],
+  remarkPlugins: [[remarkToc, { tight: true }]],
+  rehypePlugins: [rehypeSlug, rehypeUnwrapImages],
 };
 
 /** @type {import('@sveltejs/kit').Config} */

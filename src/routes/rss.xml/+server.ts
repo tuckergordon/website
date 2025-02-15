@@ -24,7 +24,7 @@ export async function GET({ fetch }) {
 							<guid isPermaLink="true">${config.url}/${post.slug}</guid>
 							<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 						</item>
-					`
+					`,
           )
           .join('')}
 			</channel>

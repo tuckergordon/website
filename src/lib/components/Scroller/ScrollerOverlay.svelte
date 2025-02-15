@@ -1,17 +1,34 @@
 <script lang="ts">
-  export let backdrop: string;
-  export let justifyContent = 'center';
+  import type { SvelteHTMLElements } from 'svelte/elements';
+
+  type Props = SvelteHTMLElements['div'] & {
+    backdrop: string;
+    contentProps?: SvelteHTMLElements['div'];
+    onstepenter?: (event: CustomEvent) => void;
+    onstepexit?: (event: CustomEvent) => void;
+    onstepprogress?: (event: CustomEvent) => void;
+  };
+
+  let {
+    backdrop,
+    children,
+    contentProps,
+    onstepenter,
+    onstepexit,
+    onstepprogress,
+    ...rest
+  }: Props = $props();
 </script>
 
 <div
   class="scroller-overlay"
   data-scroller-backdrop={backdrop}
-  on:stepEnter
-  on:stepExit
-  on:stepProgress
-  {...$$props}>
-  <div class="scroller-overlay-content" style:justify-content={justifyContent}>
-    <slot />
+  {onstepenter}
+  {onstepexit}
+  {onstepprogress}
+  {...rest}>
+  <div class="scroller-overlay-content" {...contentProps}>
+    {@render children?.()}
   </div>
 </div>
 

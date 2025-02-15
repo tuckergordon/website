@@ -1,13 +1,13 @@
-<script>
-  let _class = '';
-  export { _class as class };
-  export let style = '';
+<script lang="ts">
+  import type { SvelteHTMLElements } from 'svelte/elements';
+
+  let props: SvelteHTMLElements['div'] = $props();
 </script>
 
-<div class={'scroll-down-arrows ' + _class} {style}>
-  <span class="arrow" />
-  <span class="arrow" />
-  <span class="arrow" />
+<div {...props} class={['scroll-down-arrows', props.class]}>
+  <span class="arrow"></span>
+  <span class="arrow"></span>
+  <span class="arrow"></span>
 </div>
 
 <style lang="scss">

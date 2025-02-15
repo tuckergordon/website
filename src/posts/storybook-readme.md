@@ -1,7 +1,7 @@
 ---
 title: Using Markdown Files in Storybook
 description: How to use markdown .md files (e.g. README.md) directly in Storybook
-date: '2025-02-13'
+date: '2025-02-15'
 published: true
 ---
 
@@ -92,10 +92,9 @@ component:
 
 ```tsx
 // .storybook/autodocsTemplate.tsx
-
 // prettier-ignore
 import { Title, Subtitle, Description, Primary, Controls, Stories, useOf, Markdown } from '@storybook/blocks';
-import React from "react";
+import React from 'react';
 
 const defaultTemplate = (
   <>
@@ -109,11 +108,11 @@ const defaultTemplate = (
 );
 
 export const autodocsTemplate = ({ of }) => {
-  const resolvedOf = useOf(of || "story", ["story", "meta"]);
+  const resolvedOf = useOf(of || 'story', ['story', 'meta']);
 
   // If story has exported a `README` parameter, render it as a Markdown
   // instead of the default template
-  if (resolvedOf.type === "story" && resolvedOf.story.moduleExport?.README) {
+  if (resolvedOf.type === 'story' && resolvedOf.story.moduleExport?.README) {
     return <Markdown>{resolvedOf.story.moduleExport.README}</Markdown>;
   }
   return defaultTemplate;

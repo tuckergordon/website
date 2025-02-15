@@ -9,7 +9,7 @@
     </section>
     <section class="flex flex-wrap items-center justify-center gap-y-4 space-x-4">
       <a
-        class="btn variant-soft"
+        class="variant-soft btn"
         href="mailto:tucker.gordon18@gmail.com?subject=Hello from your website!"
         target="_blank"
         rel="noreferrer">
@@ -17,7 +17,7 @@
         <span class="ml-2 hidden lg:inline-block">Email</span>
       </a>
       <a
-        class="btn variant-soft"
+        class="variant-soft btn"
         href="https://github.com/tuckergordon"
         target="_blank"
         rel="noreferrer">
@@ -25,7 +25,7 @@
         <span class="ml-2 hidden lg:inline-block">Github</span>
       </a>
       <a
-        class="btn variant-soft"
+        class="variant-soft btn"
         href="https://www.linkedin.com/in/tucker-gordon-ab5b8b67/"
         target="_blank"
         rel="noreferrer">
@@ -33,13 +33,13 @@
         <span class="ml-2 hidden lg:inline-block">LinkedIn</span>
       </a>
       <a
-        class="btn variant-soft"
+        class="variant-soft btn"
         href="https://twitter.com/TuckerAGordon"
         target="_blank"
         rel="noreferrer">
         <Icon icon="fa-brands:twitter" />
         <span class="ml-2 hidden lg:inline-block">Twitter</span></a>
-      <a class="btn variant-soft" href="/rss.xml" target="_blank" rel="noreferrer">
+      <a class="variant-soft btn" href="/rss.xml" target="_blank" rel="noreferrer">
         <Icon icon="fa-solid:rss" />
         <span class="ml-2 hidden lg:inline-block">RSS</span></a>
     </section>
