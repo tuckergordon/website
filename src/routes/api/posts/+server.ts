@@ -7,7 +7,6 @@ async function getPosts() {
   // Grab all posts
   const paths = import.meta.glob('/src/posts/*.md', { eager: true });
 
-  // TODO: forEach?
   for (const path in paths) {
     const file = paths[path];
     // Get the slug from the psot

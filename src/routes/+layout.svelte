@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import '../styles/app.postcss';
   import Footer from './Footer.svelte';
   import Navbar from './Navbar.svelte';
@@ -13,7 +13,7 @@
 
   let { data, children } = $props();
 
-  let showSidenavs = $derived($page.url.pathname.includes('/blog/'));
+  let showSidenavs = $derived(page.url.pathname.includes('/blog/'));
   let sidebarClasses = $derived(showSidenavs ? 'w-0 lg:w-64' : 'hidden');
 
   // Setup Skeleton pop-up for use throughout the app

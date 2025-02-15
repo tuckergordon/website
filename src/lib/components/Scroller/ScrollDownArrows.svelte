@@ -1,13 +1,10 @@
 <script lang="ts">
-  interface Props {
-    class?: string;
-    style?: string;
-  }
+  import type { SvelteHTMLElements } from 'svelte/elements';
 
-  let { class: _class = '', style = '' }: Props = $props();
+  let props: SvelteHTMLElements['div'] = $props();
 </script>
 
-<div class={'scroll-down-arrows ' + _class} {style}>
+<div {...props} class={['scroll-down-arrows', props.class]}>
   <span class="arrow"></span>
   <span class="arrow"></span>
   <span class="arrow"></span>
