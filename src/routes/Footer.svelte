@@ -22,7 +22,7 @@
         target="_blank"
         rel="noreferrer">
         <Icon icon="fa-brands:github" />
-        <span class="ml-2 hidden lg:inline-block">Github</span>
+        <span class="ml-2 hidden lg:inline-block">GitHub</span>
       </a>
       <a
         class="variant-soft btn"
@@ -32,13 +32,6 @@
         <Icon icon="fa-brands:linkedin" />
         <span class="ml-2 hidden lg:inline-block">LinkedIn</span>
       </a>
-      <a
-        class="variant-soft btn"
-        href="https://twitter.com/TuckerAGordon"
-        target="_blank"
-        rel="noreferrer">
-        <Icon icon="fa-brands:twitter" />
-        <span class="ml-2 hidden lg:inline-block">Twitter</span></a>
       <a class="variant-soft btn" href="/rss.xml" target="_blank" rel="noreferrer">
         <Icon icon="fa-solid:rss" />
         <span class="ml-2 hidden lg:inline-block">RSS</span></a>
