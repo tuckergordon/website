@@ -1,0 +1,240 @@
+[
+  {
+    "name": "Advana ML Operations",
+    "description": "Built scanning and deployment CI/CD pipelines for DoD's Advanced Enterprise Analytics platform",
+    "year": "2024 - Present",
+    "madeAt": "Booz Allen",
+    "builtWith": ["YAML", "Tekton", "Docker", "Figma"],
+    "deployedWith": ["GitLab", "AWS", "Kubernetes", "Helm", "NGINX"]
+  },
+  {
+    "name": "Advana Data & AI Services",
+    "description": "Led documentation modernization for DoD's Advanced Enterprise Analytics platform",
+    "year": "2024 - Present",
+    "madeAt": "Booz Allen",
+    "builtWith": [
+      "React",
+      "TypeScript",
+      "Docusaurus",
+      "MDX",
+      "Vite",
+      "MUI",
+      "Lottie",
+      "SCSS",
+      "Figma"
+    ],
+    "deployedWith": ["GitLab", "AWS", "Tekton", "Docker", "Kubernetes", "Helm", "NGINX"]
+  },
+  {
+    "name": "'mmish.dev",
+    "description": "Fantasy football league-specific blog and stats",
+    "year": 2024,
+    "madeAt": "Personal",
+    "builtWith": [
+      "SvelteKit",
+      "TypeScript",
+      "Vercel",
+      "TailwindCSS",
+      "Vite",
+      "SkeletonUI",
+      "PostCSS",
+      "SCSS",
+      "MDsveX",
+      "Iconify",
+      "Python",
+      "FastAPI",
+      "Conda"
+    ],
+    "deployedWith": ["Vercel", "Contentful", "Supabase", "GitHub Actions"],
+    "link": "https://www.mmish.dev/"
+  },
+  {
+    "name": "Booz Allen Solutions Kiosk",
+    "description": "Visual portfolio of BAH solutions used for booth demos at industry conferences and events",
+    "year": 2024,
+    "madeAt": "Booz Allen",
+    "builtWith": ["React", "TypeScript", "Vite", "MUI", "Lottie", "SCSS"],
+    "deployedWith": ["Local filesystem", "Sharepoint"]
+  },
+  {
+    "name": "Generative AI 101",
+    "description": "Interactive article that visually explains the basics of generative AI",
+    "year": 2024,
+    "madeAt": "Booz Allen",
+    "builtWith": ["React", "TypeScript", "Vite", "MUI", "Lottie", "SCSS"],
+    "deployedWith": ["Sharepoint"]
+  },
+  {
+    "name": "TuckerGordon.dev",
+    "description": "My personal website and blog",
+    "year": "2023 - Present",
+    "madeAt": "Personal",
+    "builtWith": [
+      "SvelteKit",
+      "TypeScript",
+      "TailwindCSS",
+      "Vite",
+      "SkeletonUI",
+      "PostCSS",
+      "SCSS",
+      "MDsveX",
+      "Iconify"
+    ],
+    "deployedWith": ["Vercel", "GitHub Actions"],
+    "link": "https://tuckergordon.dev/"
+  },
+  {
+    "name": "Booz Allen Earth MRI",
+    "description": "Interactive white paper that details an ML approach to predicting concentrations of critical minerals",
+    "year": 2023,
+    "madeAt": "Booz Allen",
+    "builtWith": ["React", "TypeScript", "Vite", "MUI", "Leaflet", "Plotly", "Vitest", "SCSS"],
+    "deployedWith": ["Sharepoint"]
+  },
+  {
+    "name": "MRADS",
+    "description": "Forward-deployed application for remotely controlling and communicating with devices spread across a mesh network",
+    "year": 2023,
+    "madeAt": "Booz Allen",
+    "builtWith": [
+      "SvelteKit",
+      "TypeScript",
+      "Vite",
+      "MongoDB",
+      "Conda",
+      "SMUI",
+      "Leaflet",
+      "D3",
+      "SCSS",
+      "Make",
+      "xbee",
+      "pnpm",
+      "Adobe Xd"
+    ],
+    "deployedWith": ["Local filesystem", "Docker"]
+  },
+  {
+    "name": "USASpending.gov Data Sources Page",
+    "description": "Explainer for how USAspending data is collected and processed",
+    "year": 2023,
+    "madeAt": "Booz Allen",
+    "builtWith": ["React", "TypeScript", "Vite", "MUI", "Lottie"],
+    "link": "https://www.usaspending.gov/data-sources",
+    "deployedWith": ["Docker"]
+  },
+  {
+    "name": "StoryKit",
+    "description": "A React component and template library for quickly building 'scrollytelling' sites. Built as a monorepo and deployed as an internal npm",
+    "year": "2021 - Present",
+    "madeAt": "Booz Allen",
+    "builtWith": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "NextJS",
+      "MUI",
+      "D3",
+      "Leaflet",
+      "Scrollama",
+      "Lottie",
+      "Storybook",
+      "Vitest",
+      "SCSS",
+      "pnpm"
+    ],
+    "deployedWith": ["npm", "Verdaccio", "GitHub Actions", "GitLab"]
+  },
+  {
+    "name": "Booz Allen Precog",
+    "description": "Low-code interface that compiles reusable data pipelines into graphics processing unit (GPU)-enabled software",
+    "year": "2020",
+    "madeAt": "Booz Allen",
+    "builtWith": [
+      "Svelte",
+      "TypeScript",
+      "Vite",
+      "FastAPI",
+      "Python",
+      "Conda",
+      "SMUI",
+      "SCSS",
+      "Make",
+      "Adobe Xd"
+    ],
+    "link": "https://www.boozallen.com/expertise/products/precog.html",
+    "deployedWith": ["Docker"]
+  },
+  {
+    "name": "Vulcan Scheduling Optimization Solution",
+    "description": "Booz Allen algorithm and user interface for optimization complex client schedules",
+    "builtWith": [
+      "Angular",
+      "TypeScript",
+      "Material",
+      "Python",
+      "FastAPI",
+      "MongoDB",
+      "D3",
+      "SCSS",
+      "Make",
+      "Adobe Xd"
+    ],
+    "year": "2019 - Present",
+    "madeAt": "Booz Allen",
+    "deployedWith": ["AWS", "Docker", "GitHub Actions"]
+  },
+  {
+    "name": "Interactives for US Gov Client",
+    "description": "Interactive web articles for the design branch of a US Gov organization",
+    "year": 2019,
+    "madeAt": "Booz Allen",
+    "builtWith": [
+      "Angular",
+      "TypeScript",
+      "Material",
+      "D3",
+      "Leaflet",
+      "Lottie",
+      "Redux",
+      "SCSS",
+      "Adobe Illustrator"
+    ]
+  },
+  {
+    "name": "Dispatch",
+    "description": "Feedback collection and analysis tool for articles published by client organization",
+    "year": 2019,
+    "madeAt": "Booz Allen",
+    "builtWith": [
+      "Angular",
+      "TypeScript",
+      "Material",
+      "Redux",
+      "Java",
+      "D3",
+      "SCSS",
+      "Adobe Illustrator"
+    ]
+  },
+  {
+    "name": "Malware Detection",
+    "description": "ML tool and interface for detecting malware in network traffic",
+    "year": 2018,
+    "madeAt": "Booz Allen",
+    "builtWith": ["Angular", "TypeScript", "Highcharts", "D3", "Python", "FastAPI"]
+  },
+  {
+    "name": "NLP Maintenance Reports",
+    "description": "Used Natural Language Processing to tag and identify patterns in hand-written maintenance reports",
+    "year": 2017,
+    "madeAt": "Booz Allen",
+    "builtWith": ["Python", "Pandas", "sci-kit learn", "NLTK", "Spacy"]
+  },
+  {
+    "name": "\"The power of context in networks\"",
+    "description": "Won 'Best Paper Award'at the International Conference of Autonomous Agents and Multiagent Systems (AAMAS)",
+    "year": 2017,
+    "madeAt": "Bowdoin College",
+    "builtWith": ["C", "Matlab"]
+  }
+]

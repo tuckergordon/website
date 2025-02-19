@@ -19,10 +19,10 @@
       name: 'Blog',
       href: '/blog',
     },
-    // {
-    //   name: 'Projects',
-    //   href: '/projects',
-    // },
+    {
+      name: 'Projects',
+      href: '/projects',
+    },
   ];
 </script>
 

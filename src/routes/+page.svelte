@@ -42,10 +42,15 @@
         </div>
         <div
           class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
-          Keep scrolling ⬇️ to read my story, or head over to the <a
+          Keep scrolling ⬇️ to read my story, head over to the <a
             href="/blog"
             class="variant-filled-primary btn btn-sm no-underline dark:bg-secondary-500"
-            >Blog &nbsp;<Icon icon="fa-solid:chevron-right" /></a> for some of my thoughts and musings.
+            >Blog &nbsp;<Icon icon="fa-solid:chevron-right" /></a>
+          for some of my thoughts, or check out some of the
+          <a
+            href="/projects"
+            class="variant-filled-primary btn btn-sm no-underline dark:bg-secondary-500"
+            >Projects &nbsp;<Icon icon="fa-solid:chevron-right" /></a> I've worked on.
         </div>
         <ScrollDownArrows class="text-white" />
       </div>
