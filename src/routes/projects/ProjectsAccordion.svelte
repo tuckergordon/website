@@ -32,7 +32,7 @@
 
         <div class="grid grid-cols-[auto_1fr] gap-2">
           {#if project.link}
-            <span class="font-thin">Link:</span>
+            <span class="font-thin">Link</span>
             <a
               href={project.link}
               target="_blank"
@@ -43,7 +43,7 @@
           {/if}
 
           {#if project.builtWith}
-            <span class="pt-1 font-thin">Built with:</span>
+            <span class="pt-1 font-thin">Built with</span>
             <div>
               {#each project.builtWith as tech}
                 <span
@@ -55,7 +55,7 @@
           {/if}
 
           {#if project.deployedWith}
-            <span class="pt-1 font-thin">Deployed with:</span>
+            <span class="pt-1 font-thin">Deployed with</span>
             <div>
               {#each project.deployedWith as tech}
                 <span
@@ -66,7 +66,7 @@
             </div>
           {/if}
 
-          <span class="font-thin">Made at:</span><span>{project.madeAt}</span>
+          <span class="font-thin">Made at</span><span>{project.madeAt}</span>
         </div>
       </svelte:fragment>
     </AccordionItem>
