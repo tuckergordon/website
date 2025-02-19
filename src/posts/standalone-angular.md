@@ -145,7 +145,3 @@ To use this script, add a new command to `package.json`:
 
 Then you can simply run `npm run build:standalone`. The `dist/standalone/` directory will contain a
 standalone application that can be run by double-clicking the `index.html` file.
-
-### Vue
-
-<!-- TODO: -->

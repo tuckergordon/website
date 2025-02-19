@@ -9,10 +9,8 @@
   let { post }: Props = $props();
 </script>
 
-<a
-  href="blog/{post.slug}"
-  class="card prose h-auto min-h-[300px] max-w-full rounded-lg p-4 dark:prose-invert">
+<a href="blog/{post.slug}" class="card prose h-auto max-w-full rounded-lg p-4 dark:prose-invert">
   <h2>{post.title}</h2>
-  <p>{formatDate(post.date)}</p>
+  <p><em>{formatDate(post.date)}</em></p>
   <p>{post.description}</p>
 </a>

@@ -64,13 +64,15 @@
 
 <style lang="scss">
   .scroller {
+    $header-height: 75px;
+
     position: relative;
     width: 100vw;
 
     &-backdrop {
       position: sticky;
-      top: 0;
-      height: calc(100vh - 75px); // TODO: dynamic based on nav bar height
+      top: $header-height;
+      height: calc(100vh - $header-height);
       width: 100%;
       overflow: hidden;
 
@@ -84,7 +86,7 @@
     &-overlays {
       width: 100%;
       min-height: 100vh;
-      margin-top: -100vh; // TODO: be able to explain this
+      margin-top: -100vh;
       // fixes a safari z-index bug where some overlays go behind the backdrop
       transform: translate3d(0, 0, 0);
       // lets you interact with the backdrop

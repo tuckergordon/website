@@ -8,15 +8,13 @@
   );
 </script>
 
-<nav class="list-nav p-4">
-  <div class="p-4 pt-0 font-bold">Posts</div>
-  <ul>
+<nav class="list-nav">
+  <ul class="m-0 p-0">
     {#each page.data.posts ?? [] as post}
       <li>
         <a
           href="/blog/{post.slug}"
-          class={classesActive(`/blog/${post.slug}`)}
-          style="white-space: pre-wrap">
+          class="{classesActive(`/blog/${post.slug}`)} whitespace-pre-wrap no-underline">
           {post.title}
         </a>
       </li>

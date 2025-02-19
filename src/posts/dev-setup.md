@@ -25,7 +25,7 @@ Here's how I make the Mac terminal look/work the way I want
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - a gamechanger. Way
   better than recursive searching.
   - To install:
-    - `brew install zsh-autosuggestions``
+    - `brew install zsh-autosuggestions`
     - Add `source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh` to `~/.zshrc`
 
 ## Environment Management

@@ -3,9 +3,18 @@
 @tailwind utilities;
 @tailwind variants;
 
-html,
+/* Need to change the scroll to be on body instead of document
+so that Skeleton TableOfContents scroll events trigger correctly */
+html {
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling on the <html> element */
+}
+
 body {
-  @apply h-full overflow-hidden;
+  @apply bg-white dark:bg-surface-800;
+
+  height: 100vh; /* Full viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling on the body */
 }
 
 /* Override the link styles that Skeleton's table of contents apply */

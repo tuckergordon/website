@@ -9,9 +9,9 @@
   <title>{config.title} | Blog</title>
 </svelte:head>
 
-<div class="container px-4 sm:mx-auto sm:my-4">
-  <h1 class="h1 my-8">Blog</h1>
-  <section class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+<div class="container mx-auto max-w-xl px-4 sm:px-0">
+  <h1 class="h1 my-8">Blog Posts</h1>
+  <section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
     {#each data.posts as post}
       <PostCard {post} />
     {/each}
