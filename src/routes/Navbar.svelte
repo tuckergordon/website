@@ -19,10 +19,10 @@
       name: 'Blog',
       href: '/blog',
     },
-    // {
-    //   name: 'Projects',
-    //   href: '/projects',
-    // },
+    {
+      name: 'Projects',
+      href: '/projects',
+    },
   ];
 </script>
 
@@ -55,7 +55,7 @@
 
       <a href="/" class="flex items-center sm:mr-8">
         <!-- svelte-preprocess-import-assets-ignore -->
-        <img src="/images/mustachioed-favicon.png" alt="Tucker Emoji" class="mr-4 h-8" />
+        <img src="/images/mustachioed-favicon.png" alt="Tucker Emoji" class="ml-2 mr-4 h-8" />
         <b>{config.title}</b>
       </a>
     {/snippet}
