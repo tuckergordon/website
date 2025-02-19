@@ -13,5 +13,5 @@
   <h1 class="h1 my-8">Projects</h1>
 
   <ProjectsTable {projects} class="hidden md:block" />
-  <ProjectsAccordion {projects} class="block rounded-lg dark:bg-surface-700 md:hidden" />
+  <ProjectsAccordion {projects} class="block md:hidden" />
 </div>

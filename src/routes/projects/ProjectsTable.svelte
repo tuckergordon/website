@@ -26,9 +26,9 @@
                 href={project.link}
                 target="_blank"
                 rel="noopener"
-                class="flex items-center justify-between hover:text-primary-500 dark:hover:text-secondary-500">
+                class="flex justify-between hover:text-primary-500 dark:hover:text-secondary-500">
                 {project.name}
-                <Icon icon="mdi-external-link" class="inline"></Icon>
+                <Icon icon="mdi-external-link" class="ml-1 mt-1 inline flex-shrink-0"></Icon>
               </a>
             {:else}
               {project.name}

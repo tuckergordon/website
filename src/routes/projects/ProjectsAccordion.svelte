@@ -11,62 +11,62 @@
     return year;
   };
 
-  const trimLink = (link: string) => link.replace(/https?:\/\/(www\.)?/, '');
+  const trimLink = (link: string) => new URL(link).hostname;
 </script>
 
-<Accordion {...rest}>
+<Accordion
+  {...rest}
+  regionControl="bg-primary-100 dark:bg-surface-700"
+  regionPanel="dark:bg-surface-800 rounded-none">
   {#each projects as project}
     <AccordionItem>
       <svelte:fragment slot="summary">
         <div class="flex items-center justify-between">
           <span class="font-semibold">{project.name}</span>
-          <span class="italic">{collapseYear(project.year)}</span>
-        </div></svelte:fragment>
-      <svelte:fragment slot="content">
-        <div class="px-2 font-light">
-          <div class="mb-4 font-normal">{project.description}</div>
+          <span class="text-end italic">{collapseYear(project.year)}</span>
+        </div>
+      </svelte:fragment>
 
+      <svelte:fragment slot="content">
+        <div class="mb-4">{project.description}</div>
+
+        <div class="grid grid-cols-[auto_1fr] gap-2">
           {#if project.link}
-            <div class="mb-4">
-              Link:
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener"
-                class="ml-2 hover:text-primary-500 dark:hover:text-secondary-500">
-                {trimLink(project.link)}
-                <Icon icon="mdi-external-link" class="ml-1 inline"></Icon>
-              </a>
-            </div>
+            <span class="font-thin">Link:</span>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener"
+              class="hover:text-primary-500 dark:hover:text-secondary-500">
+              {trimLink(project.link)}<Icon icon="mdi-external-link" class="ml-1 inline"></Icon>
+            </a>
           {/if}
 
           {#if project.builtWith}
-            <div class="mb-4 flex">
-              <span class="mr-2 flex-shrink-0 pt-1">Built with:</span>
-              <div>
-                {#each project.builtWith as tech}
-                  <span
-                    class="variant-soft-secondary chip pointer-events-none m-1 dark:variant-ghost-secondary">
-                    {tech}
-                  </span>
-                {/each}
-              </div>
+            <span class="pt-1 font-thin">Built with:</span>
+            <div>
+              {#each project.builtWith as tech}
+                <span
+                  class="variant-soft-secondary chip pointer-events-none m-1 ml-0 mr-2 dark:variant-ghost-secondary">
+                  {tech}
+                </span>
+              {/each}
             </div>
           {/if}
 
           {#if project.deployedWith}
-            <div class="flex">
-              <span class="mr-2 flex-shrink-0 pt-1">Deployed with:</span>
-              <div>
-                {#each project.deployedWith as tech}
-                  <span
-                    class="variant-soft-primary chip pointer-events-none m-1 dark:variant-ghost-primary">
-                    {tech}
-                  </span>
-                {/each}
-              </div>
+            <span class="pt-1 font-thin">Deployed with:</span>
+            <div>
+              {#each project.deployedWith as tech}
+                <span
+                  class="variant-soft-primary chip pointer-events-none m-1 ml-0 mr-2 dark:variant-ghost-primary">
+                  {tech}
+                </span>
+              {/each}
             </div>
           {/if}
+
+          <span class="font-thin">Made at:</span><span>{project.madeAt}</span>
         </div>
       </svelte:fragment>
     </AccordionItem>
