@@ -9,7 +9,7 @@
   <title>{config.title} | Projects</title>
 </svelte:head>
 
-<div class="container px-4 pb-12 sm:mx-auto">
+<div class="container px-4 sm:mx-auto">
   <h1 class="h1 my-8">Projects</h1>
 
   <ProjectsTable {projects} class="hidden md:block" />

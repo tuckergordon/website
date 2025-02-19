@@ -2,7 +2,8 @@
   import Icon from '@iconify/svelte';
 </script>
 
-<div class="border-t border-surface-500/10 bg-surface-50 text-xs dark:bg-surface-900 md:text-base">
+<div
+  class="mt-16 border-t border-surface-500/10 bg-surface-50 text-xs dark:bg-surface-900 md:text-base">
   <div class="mx-auto w-full max-w-7xl space-y-6 p-4 py-10">
     <section class="prose mx-auto text-center dark:prose-invert">
       <h3>I'd love to hear from you!</h3>
