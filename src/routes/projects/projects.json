@@ -123,6 +123,24 @@
     "deployedWith": ["Docker"]
   },
   {
+    "name": "Fantasy Football Draft Lottery",
+    "description": "A simple web app for running our 2023 fantasy football draft lottery",
+    "year": 2023,
+    "madeAt": "Personal",
+    "builtWith": ["SvelteKit", "TypeScript", "Vite"],
+    "deployedWith": ["Vercel", "GitHub Actions"],
+    "link": "https://chungus-draft-lottery.vercel.app/"
+  },
+  {
+    "name": "Every Single Street PWM",
+    "description": "An interactive map for my friend Danny to use to track his progress running every street in Portland, ME",
+    "year": 2022,
+    "madeAt": "Personal",
+    "builtWith": ["SvelteKit", "TypeScript", "Leaflet", "SMUI"],
+    "deployedWith": ["Firebase", "GitHub Actions"],
+    "link": "https://every-single-street-pwm.web.app"
+  },
+  {
     "name": "StoryKit",
     "description": "A React component and template library for quickly building 'scrollytelling' sites. Built as a monorepo and deployed as an internal npm",
     "year": "2021 - Present",
@@ -145,6 +163,15 @@
     "deployedWith": ["npm", "Verdaccio", "GitHub Actions", "GitLab"]
   },
   {
+    "name": "Haunted Harvest",
+    "description": "A Halloween party invite",
+    "year": 2021,
+    "madeAt": "Personal",
+    "builtWith": ["Svelte", "TypeScript", "Vite", "SCSS"],
+    "deployedWith": ["GitHub Pages", "GitHub Actions"],
+    "link": "https://github.com/tuckergordon/haunted-harvest/deployments/github-pages"
+  },
+  {
     "name": "Booz Allen Precog",
     "description": "Low-code interface that compiles reusable data pipelines into graphics processing unit (GPU)-enabled software",
     "year": "2020",
@@ -165,6 +192,24 @@
     "deployedWith": ["Docker"]
   },
   {
+    "name": "Survyber",
+    "description": "A COVID-era website for tracking the results of an online Survivor game played by friends",
+    "year": 2020,
+    "madeAt": "Personal",
+    "builtWith": ["Angular", "TypeScript", "Material", "D3", "SCSS", "RXJS", "Adobe Xd"],
+    "deployedWith": ["GitHub Pages", "GitHub Actions"],
+    "link": "https://tuckergordon.github.io/survivor"
+  },
+  {
+    "name": "Iceland: Golden Days in November",
+    "description": "A visual/interactive travel journal of a family trip to Iceland",
+    "year": 2020,
+    "madeAt": "Personal",
+    "builtWith": ["Angular", "TypeScript", "Material", "SCSS"],
+    "deployedWith": ["GitHub Pages", "GitHub Actions"],
+    "link": "https://tuckergordon.github.io/iceland/"
+  },
+  {
     "name": "Vulcan Scheduling Optimization",
     "description": "Booz Allen algorithm and user interface for optimization complex client schedules",
     "builtWith": [
@@ -175,6 +220,7 @@
       "FastAPI",
       "MongoDB",
       "D3",
+      "RXJS",
       "SCSS",
       "Make",
       "Adobe Xd"
@@ -195,7 +241,7 @@
       "D3",
       "Leaflet",
       "Lottie",
-      "Redux",
+      "RXJS",
       "SCSS",
       "Adobe Illustrator"
     ]
@@ -209,12 +255,21 @@
       "Angular",
       "TypeScript",
       "Material",
-      "Redux",
-      "Java",
       "D3",
+      "RXJS",
+      "Java",
       "SCSS",
       "Adobe Illustrator"
     ]
+  },
+  {
+    "name": "Makeover Monday Week 48",
+    "description": "Winning submission to Makeover Monday data viz contest",
+    "year": 2018,
+    "madeAt": "Personal",
+    "builtWith": ["JavaScript", "D3"],
+    "deployedWith": ["GitHub Pages"],
+    "link": "https://tuckergordon.github.io/makeovermonday-nightout/"
   },
   {
     "name": "Malware Detection",
