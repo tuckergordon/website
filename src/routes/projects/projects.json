@@ -43,6 +43,7 @@
       "Iconify",
       "Python",
       "FastAPI",
+      "PostgreSQL",
       "Conda"
     ],
     "deployedWith": ["Vercel", "Contentful", "Supabase", "GitHub Actions"],
@@ -169,7 +170,7 @@
     "madeAt": "Personal",
     "builtWith": ["Svelte", "TypeScript", "Vite", "SCSS"],
     "deployedWith": ["GitHub Pages", "GitHub Actions"],
-    "link": "https://github.com/tuckergordon/haunted-harvest/deployments/github-pages"
+    "link": "https://tuckergordon.github.io/haunted-harvest/"
   },
   {
     "name": "Booz Allen Precog",
@@ -258,6 +259,7 @@
       "D3",
       "RXJS",
       "Java",
+      "PostgreSQL",
       "SCSS",
       "Adobe Illustrator"
     ]
