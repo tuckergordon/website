@@ -13,7 +13,8 @@
         class="variant-soft btn"
         href="mailto:tucker.gordon18@gmail.com?subject=Hello from your website!"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+        aria-label="Email">
         <Icon icon="fa:paper-plane" />
         <span class="ml-2 hidden lg:inline-block">Email</span>
       </a>
@@ -21,7 +22,8 @@
         class="variant-soft btn"
         href="https://github.com/tuckergordon"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+        aria-label="GitHub">
         <Icon icon="fa-brands:github" />
         <span class="ml-2 hidden lg:inline-block">GitHub</span>
       </a>
@@ -29,11 +31,12 @@
         class="variant-soft btn"
         href="https://www.linkedin.com/in/tucker-gordon-ab5b8b67/"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+        aria-label="LinkedIn">
         <Icon icon="fa-brands:linkedin" />
         <span class="ml-2 hidden lg:inline-block">LinkedIn</span>
       </a>
-      <a class="variant-soft btn" href="/rss.xml" target="_blank" rel="noreferrer">
+      <a class="variant-soft btn" href="/rss.xml" target="_blank" rel="noreferrer" aria-label="RSS">
         <Icon icon="fa-solid:rss" />
         <span class="ml-2 hidden lg:inline-block">RSS</span></a>
     </section>
