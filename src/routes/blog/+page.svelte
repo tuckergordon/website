@@ -7,6 +7,7 @@
 
 <svelte:head>
   <title>{config.title} | Blog</title>
+  <meta name="description" content="Tucker Gordon's blog" />
 </svelte:head>
 
 <div class="container mx-auto max-w-xl px-4 sm:px-0">

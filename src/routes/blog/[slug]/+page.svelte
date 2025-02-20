@@ -10,9 +10,10 @@
 
 <!-- SEO -->
 <svelte:head>
-  <title>{data.meta.title}</title>
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content={data.meta.title} />
+  <title>Tucker Gordon | {data.meta.title}</title>
+  <meta name="og:type" content="article" />
+  <meta name="og:title" content={data.meta.title} />
+  <meta name="description" content={data.meta.description} />
   <!-- TODO: image -->
 </svelte:head>
 <div class="container mx-auto grid grid-cols-1 pt-6 lg:grid-cols-[200px_minmax(0px,_1fr)_200px]">

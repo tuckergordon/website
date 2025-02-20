@@ -1,21 +1,26 @@
 <script lang="ts">
   import scrollama from 'scrollama';
-  import { onMount } from 'svelte';
+  import { onMount, type Snippet } from 'svelte';
 
-  let backdrop: Element;
+  interface Props {
+    backdrops: Snippet;
+    overlays: Snippet;
+  }
+
+  let backdrop: HTMLElement;
   let overlayContainer: HTMLDivElement;
 
-  let { backdrops, overlays } = $props();
+  let { backdrops, overlays }: Props = $props();
   const _backdrops = new Map<string, Element>();
   let _overlays: Element[] = [];
 
   const scroller = scrollama();
 
   onMount(() => {
-    [...backdrop.children].forEach((element: Element) => {
+    [...backdrop.children].forEach((element) => {
       _backdrops.set(element.id, element);
     });
-    _overlays = [...overlayContainer.children] as Element[];
+    _overlays = [...overlayContainer.children];
     setBackdrop([..._backdrops.values()][0]);
 
     scroller
@@ -76,7 +81,9 @@
       width: 100%;
       overflow: hidden;
 
-      > :global(*) {
+      > :global(*),
+      /* Handles enhanced images (which need to be wrapped in a containing element) */
+      > :global(* > picture > img) {
         height: 100%;
         width: 100%;
         object-fit: cover;

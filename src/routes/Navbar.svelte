@@ -71,7 +71,8 @@
         class="btn-icon !mx-0 hover:variant-soft-surface hover:text-on-primary-token"
         href="https://github.com/tuckergordon/website"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+        aria-label="GitHub">
         <Icon icon="fa-brands:github" />
       </a>
       <LightSwitch rounded="rounded-full" />

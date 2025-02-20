@@ -1,32 +1,65 @@
 <script lang="ts">
+  import bowdoinIcon from '$lib/assets/images/bowdoin.png';
+  import maineIcon from '$lib/assets/images/maine.jpeg';
+  import maineCoastVidSrc from '$lib/assets/videos/maine-coast.mp4';
+  import taborVidSrc from '$lib/assets/videos/tabor.mp4';
   import ScrollDownArrows from '$lib/components/Scroller/ScrollDownArrows.svelte';
   import Scroller from '$lib/components/Scroller/Scroller.svelte';
   import ScrollerOverlay from '$lib/components/Scroller/ScrollerOverlay.svelte';
   import * as config from '$lib/config';
   import Icon from '@iconify/svelte';
 
-  let taborVideo: HTMLVideoElement;
-  let maineCoastVideo: HTMLVideoElement;
+  let taborVid: HTMLVideoElement;
+  let maineCoastVid: HTMLVideoElement;
 </script>
 
 <svelte:head>
   <title>{config.title} | About</title>
+  <meta name="description" content="Tucker Gordon's about page" />
 </svelte:head>
 
 <Scroller>
   {#snippet backdrops()}
-    <img id="hero" src="$lib/assets/images/hero.jpeg" alt="Tucker looking at Mt. Katahdin" />
-    <video bind:this={taborVideo} id="tabor" muted autoplay loop playsinline>
-      <source src="$lib/assets/videos/tabor.mp4" type="video/mp4" />
-      <img src="$lib/assets/images/tabor.jpeg" alt="View from Mt. Tabor Park in Portland, OR" />
+    <div id="hero">
+      <enhanced:img
+        id="hero"
+        src="../lib/assets/images/hero.jpeg"
+        alt="Tucker looking at Mt. Katahdin"
+        sizes="min(1280px, 100vw)"
+        fetchpriority="high" />
+    </div>
+    <video bind:this={taborVid} id="tabor" muted autoplay loop playsinline>
+      <source src={taborVidSrc} type="video/mp4" />
+      <enhanced:img
+        src="../lib/assets/images/tabor.jpeg"
+        alt="View from Mt. Tabor Park in Portland, OR"
+        sizes="min(2560px, 100vw)" />
     </video>
-    <img id="dc" src="$lib/assets/images/dc.jpeg" alt="Washington Monument and cherry blossoms" />
-    <video bind:this={maineCoastVideo} id="maine-coast" muted autoplay loop playsinline>
-      <source src="$lib/assets/videos/maine-coast.mp4" type="video/mp4" />
-      <img src="$lib/assets/images/maine-coast.jpeg" alt="A rocky Maine coastline" />
+    <div id="dc">
+      <enhanced:img
+        src="../lib/assets/images/dc.jpeg"
+        alt="Washington Monument and cherry blossoms"
+        sizes="min(1280px, 100vw)" />
+    </div>
+    <video bind:this={maineCoastVid} id="maine-coast" muted autoplay loop playsinline>
+      <source src={maineCoastVidSrc} type="video/mp4" />
+      <enhanced:img
+        src="../lib/assets/images/maine-coast.jpeg"
+        alt="A rocky Maine coastline"
+        sizes="min(1280px, 100vw)" />
     </video>
-    <img id="surfing" src="$lib/assets/images/surfing.jpeg" alt="Tucker surfing on a wave" />
-    <img id="pancakes" src="$lib/assets/images/pancakes.jpeg" alt="Pancakes on a griddle" />
+    <div id="surfing">
+      <enhanced:img
+        src="../lib/assets/images/surfing.jpeg"
+        alt="Tucker surfing on a wave"
+        sizes="min(1500, 100vw)" />
+    </div>
+    <div id="pancakes">
+      <enhanced:img
+        src="../lib/assets/images/pancakes.jpeg"
+        alt="Pancakes on a griddle"
+        sizes="min(1280px, 100vw)" />
+    </div>
   {/snippet}
 
   {#snippet overlays()}
@@ -55,7 +88,7 @@
         <ScrollDownArrows class="text-white" />
       </div>
     </ScrollerOverlay>
-    <ScrollerOverlay backdrop="tabor" onstepenter={() => taborVideo?.play()}>
+    <ScrollerOverlay backdrop="tabor" onstepenter={() => taborVid?.play()}>
       <div class="container mx-auto flex flex-col items-center">
         <div
           class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
@@ -63,7 +96,7 @@
           <a href="https://www.bowdoin.edu/" class="bold text-on-primary-token">
             Bowdoin College
           </a>
-          <img src="$lib/assets/images/bowdoin.png" alt="Bowdoin logo" class="m-0 inline h-[1em]" />
+          <img src={bowdoinIcon} alt="Bowdoin logo" class="m-0 inline h-[1em]" />
           as a Computer Science major.
         </div>
       </div>
@@ -87,12 +120,12 @@
         </div>
       </div>
     </ScrollerOverlay>
-    <ScrollerOverlay backdrop="maine-coast" onstepenter={() => maineCoastVideo.play()}>
+    <ScrollerOverlay backdrop="maine-coast" onstepenter={() => maineCoastVid.play()}>
       <div class="container mx-auto flex flex-col items-center">
         <div
           class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
           In 2020, I began working remotely and moved back to Maine <img
-            src="$lib/assets/images/maine.jpeg"
+            src={maineIcon}
             alt="Maine state flag"
             class="inline h-[1em]" />, eager to return to the places and people this state is home
           to.

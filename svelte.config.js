@@ -5,7 +5,6 @@ import rehypeSlug from 'rehype-slug';
 import rehypeUnwrapImages from 'rehype-unwrap-images';
 import remarkToc from 'remark-toc';
 import { createHighlighter } from 'shiki';
-import { importAssets } from 'svelte-preprocess-import-assets';
 
 const theme = 'one-dark-pro';
 const highlighter = await createHighlighter({
@@ -33,7 +32,7 @@ const config = {
   extensions: ['.svelte', '.md'],
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
   // for more information about preprocessors
-  preprocess: [vitePreprocess({}), mdsvex(mdsvexOptions), importAssets()],
+  preprocess: [vitePreprocess({}), mdsvex(mdsvexOptions)],
   kit: {
     // adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
     // If your environment is not supported or you settled on a specific environment, switch out the adapter.
