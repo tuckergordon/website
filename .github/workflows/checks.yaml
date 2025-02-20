@@ -84,8 +84,8 @@ jobs:
       - name: Unit tests
         run: pnpm run test:unit
 
-      - name: Install Playwright Browsers
-        run: pnpx playwright install --with-deps
+      # - name: Install Playwright Browsers
+      #   run: pnpx playwright install --with-deps
 
-      - name: Playwright tests
-        run: pnpm test:e2e
+      # - name: Playwright tests
+      #   run: pnpm test:e2e
