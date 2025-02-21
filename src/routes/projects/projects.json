@@ -1,5 +1,14 @@
 [
   {
+    "name": "react-scrollama",
+    "description": "React library for scrollytelling. I've used this library for a long time but recently was added as a maintainer. Focused on updating its dependencies and making it TypeScript compatible",
+    "year": "2025",
+    "madeAt": "Personal",
+    "builtWith": ["React", "Rollup", "Babel"],
+    "deployedWith": ["npm", "GitHub Actions"],
+    "link": "https://github.com/jsonkao/react-scrollama"
+  },
+  {
     "name": "Advana ML Operations",
     "description": "Built scanning and deployment CI/CD pipelines for DoD's Advanced Enterprise Analytics platform",
     "year": "2024 - Present",
