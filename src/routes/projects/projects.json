@@ -289,7 +289,7 @@
   },
   {
     "name": "\"The power of context in networks\"",
-    "description": "Won 'Best Paper Award'at the International Conference of Autonomous Agents and Multiagent Systems (AAMAS)",
+    "description": "Won 'Best Paper Award' at the International Conference of Autonomous Agents and Multiagent Systems (AAMAS)",
     "year": 2017,
     "madeAt": "Bowdoin College",
     "builtWith": ["C", "Matlab"],
