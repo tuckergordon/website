@@ -1,3 +1,4 @@
+import { addCopyButton } from './src/lib/shiki/transformers/copy-button.js';
 import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex';
@@ -16,13 +17,19 @@ const highlighter = await createHighlighter({
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
   extensions: ['.md'],
-  layout:{
-    _: './src/mdsvex.svelte'
+  layout: {
+    _: './src/mdsvex.svelte',
   },
   highlight: {
     highlighter: async (code, lang = 'text') => {
       await highlighter.loadLanguage('javascript');
-      const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
+      const html = escapeSvelte(
+        highlighter.codeToHtml(code, {
+          lang,
+          theme,
+          transformers: [addCopyButton()],
+        }),
+      );
       return `{@html \`${html}\` }`;
     },
   },

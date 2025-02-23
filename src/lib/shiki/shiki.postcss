@@ -1,0 +1,19 @@
+pre.shiki {
+  position: relative;
+
+  code {
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
+
+  button.copy {
+    @apply variant-soft btn btn-sm absolute right-2 top-2 !text-white;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+  }
+
+  &:hover button.copy {
+    opacity: 1;
+  }
+}
