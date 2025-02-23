@@ -165,7 +165,7 @@
   {/snippet}
 </Scroller>
 
-<section class="prose mx-auto my-12 px-4 dark:prose-invert sm:my-24">
+<section class="prose mx-auto my-12 px-4 dark:prose-invert sm:my-16">
   <p>
     I appreciate you taking the time to visit me on my little corner of the internet. If anything on
     this site makes you think "I'd like to chat with this guy," please reach out via any of the
