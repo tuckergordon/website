@@ -1,7 +1,5 @@
 <script lang="ts" module>
-  import { code, img } from '$lib/components/custom-mdsvex';
-
-  export { code, img };
+  export { code, img } from '$lib/components/custom-mdsvex';
 </script>
 
 <script lang="ts">
