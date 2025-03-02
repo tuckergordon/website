@@ -4,7 +4,7 @@
     "description": "A collection of live webcam streams from beaches around Portland, ME because I was tired of checking each one individually",
     "year": "2025",
     "madeAt": "Personal",
-    "builtWith": ["HTML", "CSS"],
+    "builtWith": ["HTML", "CSS", "JavaScript", "D3"],
     "deployedWith": ["GitHub Pages"],
     "link": "https://surfcams.tuckergordon.dev/"
   },
