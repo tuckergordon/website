@@ -22,7 +22,6 @@
   {#snippet backdrops()}
     <div id="hero">
       <enhanced:img
-        id="hero"
         src="../lib/assets/images/hero.jpeg"
         alt="Tucker looking at Mt. Katahdin"
         sizes="min(1280px, 100vw)"

@@ -41,7 +41,7 @@
         data-popup="popupCombobox">
         <nav class="list-nav">
           <ul>
-            {#each links as link}
+            {#each links as link (link.name)}
               <li>
                 <a href={link.href} class="!rounded-none">
                   <span class="flex-auto">{link.name}</span>
@@ -60,7 +60,7 @@
       </a>
     {/snippet}
     {#snippet trail()}
-      {#each links as link}
+      {#each links as link (link.name)}
         <a
           href={link.href}
           class="btn !mx-0 hidden hover:variant-soft-surface hover:text-on-primary-token sm:block">

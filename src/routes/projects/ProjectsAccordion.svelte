@@ -18,7 +18,7 @@
   {...rest}
   regionControl="bg-primary-100 dark:bg-surface-700"
   regionPanel="dark:bg-surface-800 rounded-none">
-  {#each projects as project}
+  {#each projects as project (project.name)}
     <AccordionItem>
       <svelte:fragment slot="summary">
         <div class="flex items-center justify-between">
@@ -45,7 +45,7 @@
           {#if project.builtWith}
             <span class="pt-1 font-thin">Built with</span>
             <div>
-              {#each project.builtWith as tech}
+              {#each project.builtWith as tech (tech)}
                 <span
                   class="variant-soft-secondary chip pointer-events-none m-1 ml-0 mr-2 dark:variant-ghost-secondary">
                   {tech}
@@ -57,7 +57,7 @@
           {#if project.deployedWith}
             <span class="pt-1 font-thin">Deployed with</span>
             <div>
-              {#each project.deployedWith as tech}
+              {#each project.deployedWith as tech (tech)}
                 <span
                   class="variant-soft-primary chip pointer-events-none m-1 ml-0 mr-2 dark:variant-ghost-primary">
                   {tech}

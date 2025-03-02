@@ -10,7 +10,7 @@
 
 <nav class="list-nav">
   <ul class="m-0 p-0">
-    {#each page.data.posts ?? [] as post}
+    {#each page.data.posts ?? [] as post (post?.slug)}
       <li>
         <a
           href="/blog/{post.slug}"

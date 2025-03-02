@@ -17,7 +17,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each projects as project}
+      {#each projects as project (project.name)}
         <tr>
           <td>{project.year}</td>
           <td class="font-semibold">
@@ -37,7 +37,7 @@
           <td class="hidden md:table-cell">{project.description}</td>
           <td class="hidden lg:table-cell">
             {#if project.builtWith}
-              {#each project.builtWith as tech}
+              {#each project.builtWith as tech (tech)}
                 <span
                   class="variant-soft-secondary chip pointer-events-none m-1 dark:variant-ghost-secondary">
                   {tech}
@@ -47,7 +47,7 @@
           </td>
           <td class="hidden lg:table-cell">
             {#if project.deployedWith}
-              {#each project.deployedWith as tech}
+              {#each project.deployedWith as tech (tech)}
                 <span
                   class="variant-soft-primary chip pointer-events-none m-1 dark:variant-ghost-primary">
                   {tech}

@@ -53,8 +53,11 @@
   }
 
   function setBackdrop(element: Element) {
+    // TODO: refactor scroller to avoid needing to manipulate DOM
+    /* eslint-disable svelte/no-dom-manipulating */
     backdrop.innerHTML = '';
     backdrop.appendChild(element);
+    /* eslint-enable svelte/no-dom-manipulating */
   }
 </script>
 
