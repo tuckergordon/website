@@ -83,10 +83,10 @@ because it's all good!)
 2. [Tacos La Poblanita](https://www.instagram.com/tacoslapoblanitamaine/?hl=en) (South Portland)
 3. Chipotle 😐
 4. [Quiero Cafe](https://quierocafe.online/)
+5. [Sal de la Tierra](https://www.instagram.com/saldelatierraofficial/?hl=en)
 
 Still need to try:
 
-- [Sal de la Tierra](https://www.instagram.com/saldelatierraofficial/?hl=en)
 - [Dutch's](https://www.dutchsportland.com/) (breakfast burrito)
 
 ### 🥯 Bagel rankings
