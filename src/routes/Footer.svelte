@@ -36,9 +36,15 @@
         <Icon icon="fa-brands:linkedin" />
         <span class="ml-2 hidden lg:inline-block">LinkedIn</span>
       </a>
-      <a class="variant-soft btn" href="/rss.xml" target="_blank" rel="noreferrer" aria-label="RSS">
-        <Icon icon="fa-solid:rss" />
-        <span class="ml-2 hidden lg:inline-block">RSS</span></a>
+      <a
+      class="variant-soft btn"
+      href="https://bsky.app/profile/tucker-gordon.bsky.social"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Bluesky">
+      <Icon icon="fa6-brands:bluesky" />
+      <span class="ml-2 hidden lg:inline-block">Bluesky</span>
+    </a>
     </section>
   </div>
 </div>
