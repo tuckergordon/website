@@ -37,14 +37,14 @@
         <span class="ml-2 hidden lg:inline-block">LinkedIn</span>
       </a>
       <a
-      class="variant-soft btn"
-      href="https://bsky.app/profile/tucker-gordon.bsky.social"
-      target="_blank"
-      rel="noreferrer"
-      aria-label="Bluesky">
-      <Icon icon="fa6-brands:bluesky" />
-      <span class="ml-2 hidden lg:inline-block">Bluesky</span>
-    </a>
+        class="variant-soft btn"
+        href="https://bsky.app/profile/tucker-gordon.bsky.social"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Bluesky">
+        <Icon icon="fa6-brands:bluesky" />
+        <span class="ml-2 hidden lg:inline-block">Bluesky</span>
+      </a>
     </section>
   </div>
 </div>
