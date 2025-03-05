@@ -18,17 +18,17 @@
     "link": "https://github.com/jsonkao/react-scrollama"
   },
   {
-    "name": "Advana ML Operations",
-    "description": "Built scanning and deployment CI/CD pipelines for DoD's Advanced Enterprise Analytics platform",
+    "name": "DoD Infrastructure Management",
+    "description": "Built scanning and deployment CI/CD pipelines for a Defense Department enterprise analytics platform",
     "year": "2024 - Present",
     "madeAt": "Booz Allen",
     "builtWith": ["YAML", "Tekton", "Docker", "Figma"],
     "deployedWith": ["GitLab", "AWS", "Kubernetes", "Helm", "NGINX"]
   },
   {
-    "name": "Advana Data & AI Services",
-    "description": "Led documentation modernization for DoD's Advanced Enterprise Analytics platform",
-    "year": "2024 - Present",
+    "name": "DoD Data & AI Services",
+    "description": "Led documentation modernization for a Defense Department enterprise analytics platform",
+    "year": "2024",
     "madeAt": "Booz Allen",
     "builtWith": [
       "React",
