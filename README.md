@@ -24,3 +24,22 @@ pnpm build
 ```
 
 Preview the production build with `pnpm preview`.
+
+## Code quality
+
+This project contains several checks to maintain high code quality. These include typechecking,
+linting, autoformatting, and more.
+
+To run all checks:
+
+```bash
+pnpm check
+```
+
+Or checks can be run individually:
+
+- Prettier: `pnpm check:format`
+- ESLint: `pnpm check:format`
+- Svelte (includes typechecking): `pnpm check:svelte`
+- Vitest: `pnpm test:unit`
+- Playwright: `pnpm test:e2e`
