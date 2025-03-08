@@ -22,7 +22,7 @@
     "description": "Built scanning and deployment CI/CD pipelines for a Defense Department enterprise analytics platform",
     "year": "2024 - Present",
     "madeAt": "Booz Allen",
-    "builtWith": ["YAML", "Tekton", "Docker", "Figma"],
+    "builtWith": ["YAML", "Tekton", "Docker"],
     "deployedWith": ["GitLab", "AWS", "Kubernetes", "Helm", "NGINX"]
   },
   {
