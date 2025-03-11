@@ -30,7 +30,7 @@
   <AppBar background="bg-primary-500 dark:bg-surface-800 text-on-primary-token">
     {#snippet lead()}
       <button
-        class="btn-icon hover:variant-soft-primary hover:text-on-primary-token sm:!hidden"
+        class="btn-icon hover:variant-soft-primary hover:text-on-primary-token sm:hidden!"
         use:popup={popupCombobox}>
         <Icon icon="fa-bars" />
       </button>
@@ -43,7 +43,7 @@
           <ul>
             {#each links as link (link.name)}
               <li>
-                <a href={link.href} class="!rounded-none">
+                <a href={link.href} class="rounded-none!">
                   <span class="flex-auto">{link.name}</span>
                 </a>
               </li>
@@ -63,12 +63,12 @@
       {#each links as link (link.name)}
         <a
           href={link.href}
-          class="btn !mx-0 hidden hover:variant-soft-surface hover:text-on-primary-token sm:block">
+          class="btn mx-0! hidden hover:variant-soft-surface hover:text-on-primary-token sm:block">
           {link.name}
         </a>
       {/each}
       <a
-        class="btn-icon !mx-0 hover:variant-soft-surface hover:text-on-primary-token"
+        class="btn-icon mx-0! hover:variant-soft-surface hover:text-on-primary-token"
         href="https://github.com/tuckergordon/website"
         target="_blank"
         rel="noreferrer"

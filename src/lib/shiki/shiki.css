@@ -8,7 +8,7 @@ pre.shiki {
   }
 
   button.copy {
-    @apply variant-soft btn btn-sm absolute right-2 top-2 !text-white;
+    @apply variant-soft btn btn-sm absolute right-2 top-2 text-white!;
     transition: opacity 0.2s ease;
     opacity: 0;
   }
