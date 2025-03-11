@@ -1,6 +1,6 @@
 <script lang="ts">
   import { afterNavigate } from '$app/navigation';
-  import '../styles/app.postcss';
+  import '../styles/app.css';
   import Footer from './Footer.svelte';
   import Navbar from './Navbar.svelte';
   import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
