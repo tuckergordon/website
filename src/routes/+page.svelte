@@ -65,23 +65,23 @@
     <ScrollerOverlay backdrop="hero">
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
           👋 Hi there!
         </div>
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
           My name is <b>Tucker</b> and I'm a <b>web developer 🧑‍💻 in Portland, ME.</b>
         </div>
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
           Keep scrolling ⬇️ to read my story, head over to the <a
             href="/blog"
-            class="variant-filled-primary btn btn-sm no-underline dark:bg-secondary-500"
-            >Blog &nbsp;<Icon icon="fa-solid:chevron-right" /></a>
+            class="preset-filled-primary-500 btn btn-sm dark:bg-secondary-500 no-underline"
+            >Blog  <Icon icon="fa-solid:chevron-right" /></a>
           for some of my thoughts, or check out some of the
           <a
             href="/projects"
-            class="variant-filled-primary btn btn-sm no-underline dark:bg-secondary-500"
+            class="preset-filled-primary-500 btn btn-sm dark:bg-secondary-500 no-underline"
             >Projects &nbsp;<Icon icon="fa-solid:chevron-right" /></a> I've worked on.
         </div>
         <ScrollDownArrows class="text-white" />
@@ -90,9 +90,9 @@
     <ScrollerOverlay backdrop="tabor" onstepenter={() => taborVid?.play()}>
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
           I grew up in the other Portland (OR) but moved across the country to attend
-          <a href="https://www.bowdoin.edu/" class="bold text-on-primary-token">
+          <a href="https://www.bowdoin.edu/" class="bold text-primary-contrast-500">
             Bowdoin College
           </a>
           <img src={bowdoinIcon} alt="Bowdoin logo" class="m-0 inline h-[1em]" />
@@ -103,16 +103,16 @@
     <ScrollerOverlay backdrop="dc">
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
           <p>
-            I joined <a href="https://www.boozallen.com/" class="text-on-primary-token">
+            I joined <a href="https://www.boozallen.com/" class="text-primary-contrast-500">
               Booz Allen</a>
             in 2017 as a <b>data scientist</b> in DC, focused on scheduling optimization 🗓️, Natural
             Language Processing 📖, and data visualization 📊.
           </p>
         </div>
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
           Data viz introduced me to web development, and what began with creating small
           <b>scrollytelling</b> pages for clients, turned into building
           <b>enterprise applications</b> and immersion in the world of JavaScript.
@@ -122,7 +122,7 @@
     <ScrollerOverlay backdrop="maine-coast" onstepenter={() => maineCoastVid.play()}>
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
           In 2020, I began working remotely and moved back to Maine <img
             src={maineIcon}
             alt="Maine state flag"
@@ -134,7 +134,7 @@
     <ScrollerOverlay backdrop="surfing">
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
           Outside of work, my hobbies include surfing 🏄‍♂️, snowboarding 🏂, disc golfing 🥏, softball
           🥎, and an endless search for the perfect pancake 🥞.
         </div>
@@ -143,19 +143,19 @@
     <ScrollerOverlay backdrop="pancakes">
       <div class="container mx-auto flex flex-col items-center">
         <div
-          class="card variant-filled-secondary prose my-3 max-w-sm p-3 opacity-90 dark:prose-invert dark:bg-surface-500 dark:text-on-surface-token">
-          <h4 class="text-on-primary-token">Current pancake leaders</h4>
+          class="card preset-filled-secondary-500 prose dark:prose-invert dark:bg-surface-500 dark:text-surface-contrast-500 my-3 max-w-sm p-3 opacity-90">
+          <h4 class="text-primary-contrast-500">Current pancake leaders</h4>
 
           <ul>
             <li>
-              <a href="http://www.palacedinerme.com/" class="text-on-primary-token"
+              <a href="http://www.palacedinerme.com/" class="text-primary-contrast-500"
                 >The Palace Diner</a> in Biddeford, ME
             </li>
             <li>
               <a
                 href="https://www.seriouseats.com/light-and-fluffy-pancakes-recipe"
-                class="text-on-primary-token">J. Kenji Lopez-Alt's recipe</a> (who would've thought sour
-              cream was the key?)
+                class="text-primary-contrast-500">J. Kenji Lopez-Alt's recipe</a> (who would've thought
+              sour cream was the key?)
             </li>
           </ul>
         </div>
@@ -164,7 +164,7 @@
   {/snippet}
 </Scroller>
 
-<section class="prose mx-auto my-12 px-4 dark:prose-invert sm:my-16">
+<section class="prose dark:prose-invert mx-auto my-12 px-4 sm:my-16">
   <p>
     I appreciate you taking the time to visit me on my little corner of the internet. If anything on
     this site makes you think "I'd like to chat with this guy," please reach out via any of the

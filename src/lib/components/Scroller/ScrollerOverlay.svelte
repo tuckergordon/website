@@ -41,7 +41,7 @@
     padding: 0px 30px;
 
     & > * {
-      // because the parent is set to none
+      /* Because the parent is set to none */
       pointer-events: all;
     }
 

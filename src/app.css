@@ -1,8 +1,16 @@
-@import '../lib/shiki/shiki.css' layer(base);
+@import './lib/shiki/shiki.css' layer(base);
 
 @import 'tailwindcss';
 
-@config '../../tailwind.config.ts';
+@import "@skeletonlabs/skeleton";
+
+@import "@skeletonlabs/skeleton/optional/presets";
+
+@import '../tucker-theme';
+
+@source "../node_modules/@skeletonlabs/skeleton-svelte/dist";
+
+@config '../tailwind.config.ts';
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,

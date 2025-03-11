@@ -3,7 +3,7 @@
 
   let classesActive = $derived((href: string) =>
     href === page.url.pathname
-      ? 'bg-primary-500 text-on-primary-token hover:text-primary-500 dark:bg-surface-800 dark:text-secondary-500'
+      ? 'bg-primary-500 text-primary-contrast-500 hover:text-primary-500 dark:bg-surface-800 dark:text-secondary-500'
       : '',
   );
 </script>

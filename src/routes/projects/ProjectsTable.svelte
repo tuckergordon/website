@@ -5,7 +5,7 @@
 </script>
 
 <div class="table-container" {...rest}>
-  <table class="table table-hover font-light">
+  <table class="table font-light">
     <thead>
       <tr>
         <th>Year</th>
@@ -26,9 +26,9 @@
                 href={project.link}
                 target="_blank"
                 rel="noopener"
-                class="flex justify-between hover:text-primary-500 dark:hover:text-secondary-500">
+                class="hover:text-primary-500 dark:hover:text-secondary-500 flex justify-between">
                 {project.name}
-                <Icon icon="mdi-external-link" class="ml-1 mt-1 inline shrink-0"></Icon>
+                <Icon icon="mdi-external-link" class="mt-1 ml-1 inline shrink-0"></Icon>
               </a>
             {:else}
               {project.name}
@@ -39,7 +39,7 @@
             {#if project.builtWith}
               {#each project.builtWith as tech (tech)}
                 <span
-                  class="variant-soft-secondary chip pointer-events-none m-1 dark:variant-ghost-secondary">
+                  class="preset-tonal-secondary chip dark:preset-tonal-secondary border-secondary-500 pointer-events-none m-1 border">
                   {tech}
                 </span>
               {/each}
@@ -49,7 +49,7 @@
             {#if project.deployedWith}
               {#each project.deployedWith as tech (tech)}
                 <span
-                  class="variant-soft-primary chip pointer-events-none m-1 dark:variant-ghost-primary">
+                  class="preset-tonal-primary chip dark:preset-tonal-primary border-primary-500 pointer-events-none m-1 border">
                   {tech}
                 </span>
               {/each}

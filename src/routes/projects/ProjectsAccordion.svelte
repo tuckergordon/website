@@ -1,6 +1,6 @@
 <script lang="ts">
   import Icon from '@iconify/svelte';
-  import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+  import { Accordion } from '@skeletonlabs/skeleton-svelte';
 
   let { projects, ...rest } = $props();
 
@@ -14,20 +14,18 @@
   const trimLink = (link: string) => new URL(link).hostname;
 </script>
 
-<Accordion
-  {...rest}
-  regionControl="bg-primary-100 dark:bg-surface-700"
-  regionPanel="dark:bg-surface-800 rounded-none">
+<Accordion collapsible multiple {...rest}>
   {#each projects as project (project.name)}
-    <AccordionItem>
-      <svelte:fragment slot="summary">
-        <div class="flex items-center justify-between">
-          <span class="font-semibold">{project.name}</span>
-          <span class="text-end italic">{collapseYear(project.year)}</span>
-        </div>
-      </svelte:fragment>
+    <Accordion.Item
+      value={project.name}
+      controlClasses="bg-primary-100 dark:bg-surface-700 flex items-center justify-between w-full"
+      panelClasses="dark:bg-surface-800 rounded-none">
+      {#snippet control()}
+        <span class="font-semibold">{project.name}</span>
+        <span class="text-end italic">{collapseYear(project.year)}</span>
+      {/snippet}
 
-      <svelte:fragment slot="content">
+      {#snippet panel()}
         <div class="mb-4">{project.description}</div>
 
         <div class="grid grid-cols-[auto_1fr] gap-2">
@@ -47,7 +45,7 @@
             <div>
               {#each project.builtWith as tech (tech)}
                 <span
-                  class="variant-soft-secondary chip pointer-events-none m-1 ml-0 mr-2 dark:variant-ghost-secondary">
+                  class="preset-tonal-secondary chip dark:preset-tonal-secondary border-secondary-500 pointer-events-none m-1 mr-2 ml-0 border">
                   {tech}
                 </span>
               {/each}
@@ -59,7 +57,7 @@
             <div>
               {#each project.deployedWith as tech (tech)}
                 <span
-                  class="variant-soft-primary chip pointer-events-none m-1 ml-0 mr-2 dark:variant-ghost-primary">
+                  class="preset-tonal-primary chip dark:preset-tonal-primary border-primary-500 pointer-events-none m-1 mr-2 ml-0 border">
                   {tech}
                 </span>
               {/each}
@@ -68,7 +66,7 @@
 
           <span class="font-thin">Made at</span><span>{project.madeAt}</span>
         </div>
-      </svelte:fragment>
-    </AccordionItem>
+      {/snippet}
+    </Accordion.Item>
   {/each}
 </Accordion>

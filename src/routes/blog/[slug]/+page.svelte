@@ -3,7 +3,6 @@
   import { formatDate } from '$lib/utils';
   import Sidenav from '../Sidenav.svelte';
   import Icon from '@iconify/svelte';
-  import { tocCrawler, popup, TableOfContents } from '@skeletonlabs/skeleton';
 
   let { data } = $props();
 </script>
@@ -24,12 +23,12 @@
   </aside>
 
   <main class="col-span-1 space-y-4 px-8 py-0">
-    <article class="prose mx-auto mb-8 dark:prose-invert">
+    <article class="prose dark:prose-invert mx-auto mb-8">
       <hgroup>
         <div class="flex items-center justify-between">
           <span class="shrink-0 italic">{formatDate(data.meta.date)}</span>
           <button
-            class="btn hover:variant-soft-primary lg:hidden"
+            class="btn hover:preset-tonal-primary lg:hidden"
             use:popup={{ event: 'click', target: 'features' }}>
             <span>Other posts</span>
             <Icon icon="material-symbols:keyboard-arrow-down" />
@@ -42,21 +41,15 @@
         <h1>{data.meta.title}</h1>
       </hgroup>
 
-      <div
-        class="content mb-8"
-        use:tocCrawler={{
-          mode: 'generate',
-          queryElements: 'h2',
-          // need IDs to be unique otherwise ToC won't update between pages
-          key: page.url.pathname,
-        }}>
+      <!-- TODO: toc crawler? -->
+      <div class="content mb-8">
         <data.content />
       </div>
 
       <hr />
       <a
         href="https://github.com/tuckergordon/website/blob/main/src/posts/{page.params.slug}.md"
-        class="btn mb-4 p-0 text-primary-500 no-underline hover:underline"
+        class="btn text-primary-500 mb-4 p-0 no-underline hover:underline"
         target="_blank">
         <Icon icon="material-symbols:edit" />
         <span>Edit this page</span>
@@ -65,6 +58,6 @@
   </main>
 
   <aside class="sticky top-[100px] col-span-1 hidden h-screen scroll-mt-[100px] lg:block">
-    <TableOfContents>On The Page</TableOfContents>
+    <!-- <TableOfContents>On The Page</TableOfContents> -->
   </aside>
 </div>

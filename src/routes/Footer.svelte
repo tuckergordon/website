@@ -10,7 +10,7 @@
     </section>
     <section class="flex flex-wrap items-center justify-center gap-y-4 space-x-4">
       <a
-        class="variant-soft btn"
+        class="preset-tonal btn"
         href="mailto:tucker.gordon18@gmail.com?subject=Hello from your website!"
         target="_blank"
         rel="noreferrer"
@@ -19,7 +19,7 @@
         <span class="ml-2 hidden lg:inline-block">Email</span>
       </a>
       <a
-        class="variant-soft btn"
+        class="preset-tonal btn"
         href="https://github.com/tuckergordon"
         target="_blank"
         rel="noreferrer"
@@ -28,7 +28,7 @@
         <span class="ml-2 hidden lg:inline-block">GitHub</span>
       </a>
       <a
-        class="variant-soft btn"
+        class="preset-tonal btn"
         href="https://www.linkedin.com/in/tucker-gordon-ab5b8b67/"
         target="_blank"
         rel="noreferrer"
@@ -37,7 +37,7 @@
         <span class="ml-2 hidden lg:inline-block">LinkedIn</span>
       </a>
       <a
-        class="variant-soft btn"
+        class="preset-tonal btn"
         href="https://bsky.app/profile/tucker-gordon.bsky.social"
         target="_blank"
         rel="noreferrer"
